@@ -1,5 +1,5 @@
 <!doctype html>
-<jsp:include page="_session_validate.jsp"></jsp:include>
+<jsp:include page="includes/_session_validate.jsp"></jsp:include>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
