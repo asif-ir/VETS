@@ -37,7 +37,7 @@
                         <img src="../assets/paper_img/chet_faker_2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                     </div>
                     <div class="name">
-                        <h4>Chet Faker<br /><small>Music Producer</small></h4>
+                        <h3><%=session.getAttribute("username")%><br /></h3>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
                     <br />
-                    <button class="btn"><i class="fa fa-cog"></i> Settings</button>
+                    <btn class="btn"><i class="fa fa-cog"></i> Settings</btn>
                 </div>
             </div>
             <div class="profile-tabs">
@@ -104,7 +104,7 @@
                     </div>
                     <div class="tab-pane text-center" id="following">
                         <h3 class="text-muted">Not following anyone yet :(</h3>
-                        <button class="btn btn-warning btn-fill">Find artists</button>
+                        <btn class="btn btn-warning btn-fill">Find artists</btn>
                     </div>
                 </div>
 

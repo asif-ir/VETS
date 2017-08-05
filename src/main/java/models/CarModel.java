@@ -27,6 +27,16 @@ public class CarModel {
         return car;
     }
 
+    public List<Car> getCarList() {
+        List<Car> carList = (List<Car>) client
+                .target(URL+"car/list")
+                .request(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .get(Car.class);
+
+        return carList;
+    }
+
     public Status addCar(Car car) {
         Status status = client
                         .target(URL+"car/create")
