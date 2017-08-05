@@ -1,20 +1,16 @@
 package models;
 
-import com.google.gson.JsonObject;
 import entities.*;
+import sun.misc.BASE64Encoder;
 import utils.Constants;
 import utils.GsonMessageBodyHandler;
 
-import javax.jws.soap.SOAPBinding;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-/**
- * Created by rawlooa on 8/4/2017.
- */
 public class UserModel {
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
     private String URL = Constants.URL;
@@ -53,5 +49,15 @@ public class UserModel {
                 .request(MediaType.TEXT_PLAIN).get(Status.class);
 
         return status;
+    }
+
+    public boolean authLogin(String username, String password) {
+        String authString = username + ":" + password;
+        String autjStringEnc = new BASE64Encoder().encode(authString.getBytes());
+
+        String result = client.target(URL + Constants.URL_AUTH)
+                .request(MediaType.TEXT_PLAIN).post(Entity.json(autjStringEnc), String.class);
+
+        return result.equalsIgnoreCase("true");
     }
 }

@@ -10,26 +10,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by rawlooa on 8/4/2017.
- */
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User();
         user.setFirst_name(req.getParameter("first_name"));
-        user.setFirst_name(req.getParameter("last_name"));
-        user.setFirst_name(req.getParameter("username"));
-        user.setFirst_name(req.getParameter("email"));
-        user.setFirst_name(req.getParameter("phone"));
+        user.setLast_name(req.getParameter("last_name"));
+        user.setUsername(req.getParameter("username"));
+        user.setEmail(req.getParameter("email"));
+        user.setPhone(req.getParameter("phone"));
 
-        Status status=new UserModel().addUser(user);
+        Status status = new UserModel().addUser(user);
 
-        if(status.getCode()==1){
-            req.setAttribute("message","User Added Successfully!!!");
-        }
-        else {
-            req.setAttribute("message","Error in adding user");
+        if (status.getCode() == 1) {
+            req.setAttribute("message", "Registration Successful");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        } else {
+            req.setAttribute("message", "Registration Failed!");
+            req.getRequestDispatcher("register.jsp").forward(req, resp);
         }
     }
 }
