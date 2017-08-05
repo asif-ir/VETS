@@ -1,6 +1,6 @@
 package entities;
 
-enum Fuel{
+public enum Fuel{
     petrol,
     diesel,
     cng,
