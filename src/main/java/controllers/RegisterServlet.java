@@ -18,10 +18,10 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User();
         user.setFirst_name(req.getParameter("first_name"));
-        user.setFirst_name(req.getParameter("last_name"));
-        user.setFirst_name(req.getParameter("username"));
-        user.setFirst_name(req.getParameter("email"));
-        user.setFirst_name(req.getParameter("phone"));
+        user.setLast_name(req.getParameter("last_name"));
+        user.setUsername(req.getParameter("username"));
+        user.setEmail(req.getParameter("email"));
+        user.setPhone(req.getParameter("phone"));
 
         Status status=new UserModel().addUser(user);
 
