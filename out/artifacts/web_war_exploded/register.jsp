@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="../assets/paper_img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Register | Trade & Exchange</title>
+    <title>Paper Kit by Creative Tim</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -22,8 +22,38 @@
 
 </head>
 <body>
+<nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="register-navbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="www.creative-tim.com">Creative Tim</a>
+        </div>
 
-<%@include file="includes/_login_register_navbar.jsp"%>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation-example-2">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="btn btn-simple">Components</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-simple">Tutorial</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-->
+</nav>
 
 <div class="wrapper">
     <div class="register-background">
@@ -32,22 +62,18 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
                     <div class="register-card">
-                        <h3 class="title">Register User</h3>
-                        <form class="register-form" method="post" action="add-user">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name">
-
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name">
-
-                            <label>Username</label>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        <h3 class="title">Welcome</h3>
+                        <form class="register-form">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Email">
 
                             <label>Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-
+                            <input type="password" class="form-control" placeholder="Password">
                             <button class="btn btn-danger btn-block">Register</button>
                         </form>
+                        <div class="forgot">
+                            <a href="#" class="btn btn-simple btn-danger">Forgot password?</a>
+                        </div>
                     </div>
                 </div>
             </div>

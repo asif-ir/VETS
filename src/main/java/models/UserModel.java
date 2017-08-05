@@ -27,7 +27,7 @@ public class UserModel {
     }
 
     public List<User> getUsers(){
-        List<User> userList=client
+        List<User> userList = client
                 .target(URL+"user/list")
                 .request(MediaType.APPLICATION_JSON)
                 .get(List.class);
@@ -36,7 +36,7 @@ public class UserModel {
 
     public Status addUser(User user){
 
-        Status status=client
+        Status status = client
                 .target(URL+"create")
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.TEXT_PLAIN)
@@ -46,7 +46,7 @@ public class UserModel {
     }
 
     public Status deleteUser(long id){
-        Status status=client
+        Status status = client
                 .target(URL+"delete/"+id)
                 .request(MediaType.TEXT_PLAIN).get(Status.class);
 
