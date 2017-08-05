@@ -24,6 +24,14 @@ public class UserModel {
         return user;
     }
 
+    public User getUserByName(String username) {
+        User user = client
+                .target(URL + Constants.URL_USERNAME + username)
+                .request(MediaType.APPLICATION_JSON)
+                .get(User.class);
+
+        return user;
+    }
 
     public List<User> getUsers() {
         List<User> userList = client

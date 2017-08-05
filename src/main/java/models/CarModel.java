@@ -36,6 +36,16 @@ public class CarModel {
 
         return carList;
     }
+    public List<Car> getCarList(int type) {
+        String postfix = (type == 0) ? "used" : "new";
+        List<Car> carList = (List<Car>) client
+                .target(URL + "car/list-" + type + postfix)
+                .request(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .get(Car.class);
+
+        return carList;
+    }
 
     public Status addCar(Car car) {
         Status status = client
@@ -54,5 +64,14 @@ public class CarModel {
                 .get(Status.class);
 
         return status;
+    }
+
+    public List<Car> searchCarsByName(String name) {
+        List<Car> searchCarList = (List<Car>) client
+                                    .target(URL+"/search/"+name)
+                                    .request(MediaType.TEXT_PLAIN)
+                                    .accept(MediaType.APPLICATION_JSON)
+                                    .get(Car.class);
+        return searchCarList;
     }
 }

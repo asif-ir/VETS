@@ -68,10 +68,12 @@ public class AddCarServlet extends HttpServlet {
 
         if(hit.getCode() == 1){
             req.setAttribute("message","Added Successfully");
+            req.getRequestDispatcher("profile.jsp").forward(req,resp);
         }
         else {
             req.setAttribute("message","Error in adding Vehicle");
+            req.getRequestDispatcher("add_car.jsp").forward(req,resp);
         }
-        req.getRequestDispatcher("index.jsp").forward(req,resp);
+
     }
 }
