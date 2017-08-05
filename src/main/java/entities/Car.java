@@ -7,67 +7,30 @@ import java.util.Date;
  */
 public class Car {
     private int id;
-
     private String model_name;
-
-
     private String brand_name;
-
-
     private String engine;
-
-
     private String city;
-
-
     private Fuel fuel;
-
-
     private String odo_reading;
-
-
     private String color;
-
-
     private int no_of_owners;
-
-
     private boolean power_steering;
-
-
     private String insurance;
-
-
     private Date insurance_expiry;
-
-
     private int manufacturing_year;
-
-
     private Date registration_date;
-
-
     private String registration_type;
-
-
     private String rto_location;
-
-
     private Date date_of_reg_on_website;
-
-
     private double mileage;
-
-
     private int seating_capacity;
-
-
-    private int owned_by;
+    private long owned_by;
 
     public Car(){
     }
 
-    public Car(String model_name,String brand_name,String engine,String city,Fuel fuel,String odo_reading,String color,int no_of_owners,boolean power_steering,String insurance,Date insurance_expiry,int manufacturing_year,Date registration_date,String registration_type,String rto_location,Date date_of_reg_on_website,Double mileage,int seating_capacity,int owned_by){
+    public Car(String model_name,String brand_name,String engine,String city,Fuel fuel,String odo_reading,String color,int no_of_owners,boolean power_steering,String insurance,Date insurance_expiry,int manufacturing_year,Date registration_date,String registration_type,String rto_location,Date date_of_reg_on_website,Double mileage,int seating_capacity,long owned_by){
         this.model_name=model_name;
         this.brand_name=brand_name;
         this.engine=engine;
@@ -88,7 +51,7 @@ public class Car {
         this.seating_capacity=seating_capacity;
         this.owned_by=owned_by;
     }
-    public int getOwned_by() {
+    public long getOwned_by() {
         return owned_by;
     }
 
@@ -114,6 +77,30 @@ public class Car {
 
     public Date getDate_of_regOnWebsite() {
         return date_of_reg_on_website;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+    public Date getRegistration_date() {
+        return registration_date;
+    }
+
+    public void setRegistration_date(Date registration_date) {
+        this.registration_date = registration_date;
+    }
+
+    public Date getDate_of_reg_on_website() {
+        return date_of_reg_on_website;
+    }
+
+    public void setDate_of_reg_on_website(Date date_of_reg_on_website) {
+        this.date_of_reg_on_website = date_of_reg_on_website;
     }
 
     public void setDate_of_regOnWebsite(Date date_of_regOnWebsite) {
