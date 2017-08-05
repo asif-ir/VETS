@@ -5,16 +5,11 @@ import entities.User;
 import models.UserModel;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by rawlooa on 8/4/2017.
- */
-@WebServlet(name = "AddCarServlet", urlPatterns = {"/add-user"})
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,13 +20,14 @@ public class RegisterServlet extends HttpServlet {
         user.setEmail(req.getParameter("email"));
         user.setPhone(req.getParameter("phone"));
 
-        Status status=new UserModel().addUser(user);
+        Status status = new UserModel().addUser(user);
 
-        if(status.getCode()==1){
-            req.setAttribute("message","User Added Successfully!!!");
-        }
-        else {
-            req.setAttribute("message","Error in adding user");
+        if (status.getCode() == 1) {
+            req.setAttribute("message", "Registration Successful");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        } else {
+            req.setAttribute("message", "Registration Failed!");
+            req.getRequestDispatcher("register.jsp").forward(req, resp);
         }
     }
 }
