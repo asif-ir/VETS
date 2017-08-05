@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9821f9b-9471-4948-9dd6-bcaaca80c24b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/add_car.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,26 +17,44 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TransactionModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/TransactionModel.java">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+            <state relative-caret-position="411">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1501913971527" expanded="false" signature="2580:2586" ph="©" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
+      <file leaf-file-name="add_car.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/add_car.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="48" column="58" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,10 +65,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -73,6 +94,8 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/TransactionModel.java" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/web/add_car.jsp" />
       </list>
     </option>
   </component>
@@ -137,6 +160,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="VETS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VETS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VETS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VETS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VETS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,9 +304,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/validation-api-1.1.0.Final.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -282,22 +337,21 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/VETS.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Car.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/CarModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/UserModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Car.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/CarModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Fuel.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/UserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/entities/Car.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/CarModel.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/UserModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/web.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_navbar.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/profile.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/register.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -305,12 +359,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Fuel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Status.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_navbar.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/profile.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/register.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_footer.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_login_register_navbar.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/login.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -318,6 +369,123 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/AddCarServlet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/AddTransactionServlet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/LoginServlet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/LogoutServlet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/RegisterServlet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Car.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Fuel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Transaction.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/User.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/CarModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/TransactionModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/UserModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/utils/GsonMessageBodyHandler.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/aopalliance-repackaged-2.5.0-b32.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/gson-2.2.2.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-api-2.5.0-b32.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-locator-2.5.0-b32.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-utils-2.5.0-b32.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-all-1.8.2.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javassist-3.20.0-GA.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.annotation-api-1.2.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.inject-2.5.0-b32.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.servlet-api-3.0.1.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jaxb-api-2.2.7.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-client.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-common.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-container-servlet-core.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-container-servlet.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-guava-2.25.1.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-media-jaxb.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-server.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/org.osgi.core-4.2.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/osgi-resource-locator-1.0.1.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/persistence-api-1.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/ct-paper.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/demo.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/examples.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/bootstrap-datepicker.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/bootstrap-select.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper-checkbox.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper-radio.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/jquery-1.10.2.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/jquery-ui-1.10.4.custom.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/banks.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/bg_wall.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/built_on_glass.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/cat.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/chet_faker_1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/chet_faker_2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/landing.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/profile.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/register.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/favicon.ico</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/flume.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/lamp.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/landscape.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/new_logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/pencils.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/placeholder.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/red.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/shoes.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/thinking_in_textures.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/types.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/wall-dark.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_alerts.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_carousel.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_checkbox-radio.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_collapse.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_datepicker.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_dropdown.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_images.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_inputs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_labels.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_misc.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_mixins.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_modal.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_navbars.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_progress-bars.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_responsive.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_sections.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_sliders.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_tabs-navs-pagination.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_tooltips-and-popovers.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_inputs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_labels.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_navbars.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_tabs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_transparency.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_vendor-prefixes.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/examples.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap-theme.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap-theme.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/font-awesome.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/FontAwesome.otf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/js/bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -995,7 +1163,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12461000" />
+    <option name="totallyTimeSpent" value="21828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1022,25 +1190,92 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22686376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22686376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1061,6 +1296,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/TransactionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1501913971185" expanded="true" signature="2792:2798" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1073,9 +1339,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1348,7 @@
         <state relative-caret-position="204">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1094,7 +1358,8 @@
         <state relative-caret-position="204">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1501907827770" expanded="true" signature="738:744" ph="{...}" />
+            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
+            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1103,7 +1368,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,6 +1380,9 @@
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1121,9 +1391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,7 +1416,7 @@
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501907827708" expanded="true" signature="865:872" ph="{...}" />
+            <marker date="1501913971185" expanded="true" signature="2792:2798" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1182,9 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1208,7 +1472,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,6 +1500,9 @@
           <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1243,31 +1512,7 @@
         <state relative-caret-position="17">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1277,7 +1522,8 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1501907827770" expanded="true" signature="738:744" ph="{...}" />
+            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
+            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1287,7 +1533,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1300,23 +1546,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <marker date="1501907827758" expanded="true" signature="957:963" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501907827708" expanded="true" signature="865:872" ph="{...}" />
+            <marker date="1501913971185" expanded="true" signature="2792:2798" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1326,16 +1562,8 @@
         <state relative-caret-position="503">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,56 +1579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3400">
-          <caret line="200" column="5" lean-forward="false" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/CarModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1428,11 +1606,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1441,65 +1639,114 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
           <folding>
-            <marker date="1501907827770" expanded="true" signature="738:744" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1501913971197" expanded="true" signature="1778:1790" ph="{...}" />
+            <marker date="1501913971197" expanded="true" signature="1784:1790" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="374">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501907827708" expanded="true" signature="865:872" ph="{...}" />
+            <marker date="1501913971185" expanded="true" signature="2792:2798" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Status.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/CarModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
+            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/TransactionModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state relative-caret-position="316">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="411">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1501913971527" expanded="false" signature="2580:2586" ph="©" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="48" column="58" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add_car.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
