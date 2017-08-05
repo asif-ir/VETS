@@ -1,4 +1,5 @@
 <!doctype html>
+<jsp:include page="_session_validate.jsp"></jsp:include>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -44,7 +45,7 @@
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
                     <br />
-                    <btn class="btn"><i class="fa fa-cog"></i> Settings</btn>
+                    <button class="btn"><i class="fa fa-cog"></i> Settings</button>
                 </div>
             </div>
             <div class="profile-tabs">
@@ -103,7 +104,7 @@
                     </div>
                     <div class="tab-pane text-center" id="following">
                         <h3 class="text-muted">Not following anyone yet :(</h3>
-                        <btn class="btn btn-warning btn-fill">Find artists</btn>
+                        <button class="btn btn-warning btn-fill">Find artists</button>
                     </div>
                 </div>
 
