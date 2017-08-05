@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9821f9b-9471-4948-9dd6-bcaaca80c24b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/add_car.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
-              <caret line="75" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
+              <caret line="75" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
               <folding>
                 <marker date="1501913971527" expanded="false" signature="2580:2586" ph="©" />
               </folding>
@@ -32,8 +31,8 @@
       <file leaf-file-name="add_car.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/add_car.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="452">
+              <caret line="148" column="26" lean-forward="true" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -43,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -149,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -298,6 +296,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,21 +336,13 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/LogoutServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Car.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Fuel.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/UserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/CarModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/UserModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/web.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_navbar.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/utils/Constants.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_login_register_navbar.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/profile.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/register.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -359,9 +350,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_footer.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_login_register_navbar.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/login.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -369,123 +357,29 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/AddCarServlet.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/AddTransactionServlet.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/LoginServlet.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/LogoutServlet.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controllers/RegisterServlet.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Car.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Fuel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Transaction.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/CarModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/TransactionModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/UserModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/utils/GsonMessageBodyHandler.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/aopalliance-repackaged-2.5.0-b32.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/gson-2.2.2.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-api-2.5.0-b32.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-locator-2.5.0-b32.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hk2-utils-2.5.0-b32.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-all-1.8.2.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javassist-3.20.0-GA.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.annotation-api-1.2.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.inject-2.5.0-b32.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.servlet-api-3.0.1.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jaxb-api-2.2.7.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-client.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-common.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-container-servlet-core.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-container-servlet.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-guava-2.25.1.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-media-jaxb.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jersey-server.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/org.osgi.core-4.2.0.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/osgi-resource-locator-1.0.1.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/persistence-api-1.0.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/ct-paper.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/demo.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/examples.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/bootstrap-datepicker.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/bootstrap-select.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper-checkbox.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper-radio.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/ct-paper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/jquery-1.10.2.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/js/jquery-ui-1.10.4.custom.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/banks.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/bg_wall.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/built_on_glass.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/cat.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/chet_faker_1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/chet_faker_2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/city.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/landing.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/profile.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/examples/register.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/favicon.ico</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/flume.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/lamp.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/landscape.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/new_logo.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/pencils.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/placeholder.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/red.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/shoes.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/thinking_in_textures.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/types.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/paper_img/wall-dark.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_alerts.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_buttons.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_carousel.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_checkbox-radio.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_collapse.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_datepicker.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_dropdown.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_images.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_inputs.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_labels.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_misc.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_mixins.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_modal.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_navbars.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_progress-bars.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_responsive.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_sections.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_sliders.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_tabs-navs-pagination.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_tooltips-and-popovers.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_typography.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/_variables.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_buttons.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_inputs.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_labels.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_navbars.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_tabs.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_transparency.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/ct-paper/mixins/_vendor-prefixes.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/sass/examples.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap-theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap-theme.min.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/bootstrap.min.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/css/font-awesome.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/FontAwesome.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.eot</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/fontawesome-webfont.woff</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.eot</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/fonts/glyphicons-halflings-regular.woff</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/js/bootstrap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/bootstrap3/js/bootstrap.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/compiler.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/copyright/profiles_settings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dbnavigator.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/description.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/project-template.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/scopes/scope_settings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/uiDesigner.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/vcs.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/entities/Car.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/entities/Transaction.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/entities/User.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/CarModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/TransactionModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/UserModel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utils/GsonMessageBodyHandler.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -652,9 +546,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1123,9 +1015,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <list size="3">
@@ -1159,11 +1049,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501909207118</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add add_car jsp">
+      <created>1501924091562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501924091562</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21828000" />
+    <option name="totallyTimeSpent" value="21945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1185,14 +1082,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22686376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1285,7 +1179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add transaction model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add transaction model" />
+    <MESSAGE value="add add_car jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add add_car jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1347,9 +1242,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,8 +1251,8 @@
         <state relative-caret-position="204">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
-            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1164:1182" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1176:1182" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1380,9 +1273,9 @@
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1890:1897" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1500,9 +1393,9 @@
           <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1890:1897" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1522,8 +1415,8 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
-            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1164:1182" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1176:1182" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1532,9 +1425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1627,9 +1518,9 @@
           <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501913971260" expanded="true" signature="806:1017" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1056:1331" ph="{...}" />
-            <marker date="1501913971260" expanded="true" signature="1371:1561" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="806:1017" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1056:1331" ph="{...}" />
+            <marker date="1501924135799" expanded="true" signature="1890:1897" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1638,9 +1529,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,8 +1579,8 @@
         <state relative-caret-position="357">
           <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
-            <marker date="1501913971207" expanded="true" signature="624:1194" ph="{...}" />
-            <marker date="1501913971207" expanded="true" signature="1188:1194" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1164:1182" ph="{...}" />
+            <marker date="1501924135777" expanded="true" signature="1176:1182" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1719,7 +1608,7 @@
     <entry file="file://$PROJECT_DIR$/web/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
-          <caret line="75" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
+          <caret line="75" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
           <folding>
             <marker date="1501913971527" expanded="false" signature="2580:2586" ph="©" />
           </folding>
@@ -1729,7 +1618,7 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1744,8 +1633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/add_car.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="452">
+          <caret line="148" column="26" lean-forward="true" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
           <folding />
         </state>
       </provider>
