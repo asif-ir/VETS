@@ -24,15 +24,6 @@ public class UserModel {
         return user;
     }
 
-    public User getUserByName(String username) {
-        User user = client
-                .target(URL + Constants.URL_USERNAME + username)
-                .request(MediaType.APPLICATION_JSON)
-                .get(User.class);
-
-        return user;
-    }
-
     public List<User> getUsers() {
         List<User> userList = client
                 .target(URL + Constants.URL_USER_LIST)
@@ -62,10 +53,10 @@ public class UserModel {
 
     public boolean authLogin(String username, String password) {
         String authString = username + ":" + password;
-        String authStringEnc = new BASE64Encoder().encode(authString.getBytes());
+        String autjStringEnc = new BASE64Encoder().encode(authString.getBytes());
 
         String result = client.target(URL + Constants.URL_AUTH)
-                .request(MediaType.TEXT_PLAIN).post(Entity.json(authStringEnc), String.class);
+                .request(MediaType.TEXT_PLAIN).post(Entity.json(autjStringEnc), String.class);
 
         return result.equalsIgnoreCase("true");
     }
