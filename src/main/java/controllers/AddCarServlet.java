@@ -14,13 +14,12 @@ import java.util.Date;
 import entities.Car;
 import entities.Fuel;
 import entities.Status;
-import models.*;
 
 /**
  * Created by rawlooa on 8/4/2017.
  */
 
-@WebServlet(name = "AddCarServlet",urlPatterns = {"/addCar"})
+@WebServlet(name = "AddCarServlet", urlPatterns = {"/add-car"})
 public class AddCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

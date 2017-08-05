@@ -1,4 +1,4 @@
-<nav class="navbar navbar-ct-transparent navbar-relative " role="navigation-demo" id="register-navbar">
+<nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="register-navbar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">Trade & Exchange</a>
+            <a class="navbar-brand" href="www.creative-tim.com">Trade & Exchange</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
