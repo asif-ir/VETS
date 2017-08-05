@@ -24,6 +24,7 @@ public class UserModel {
         return user;
     }
 
+
     public List<User> getUsers() {
         List<User> userList = client
                 .target(URL + Constants.URL_USER_LIST)
