@@ -29,7 +29,19 @@
     <div class="demo-header demo-header-image">
         <div class="motto">
             <h1 class="title-uppercase">Trade & Exchange</h1>
-            <h3>Make your mark with a new design.</h3>
+
+            <ul class="nav nav-pills nav-pills-danger" role="tablist">
+                <li>
+                    <a href="#description" role="tab" data-toggle="tab">
+                        List used cars
+                    </a>
+                </li>
+                <li>
+                    <a href="#concept" role="tab" data-toggle="tab">
+                        List new cars
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
