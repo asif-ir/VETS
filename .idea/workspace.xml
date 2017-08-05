@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9821f9b-9471-4948-9dd6-bcaaca80c24b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entities/Fuel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entities/Status.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Car.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/entities/Car.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/UserModel.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/UserModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/entities/Car.class" afterPath="$PROJECT_DIR$/target/classes/entities/Car.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/models/UserModel.class" afterPath="$PROJECT_DIR$/target/classes/models/UserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/CarModel.class" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/models/CarModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/models/CarModel.class" afterPath="$PROJECT_DIR$/target/classes/models/CarModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VETS.iml" afterPath="$PROJECT_DIR$/VETS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Car.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/CarModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/CarModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,12 +19,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#46169#46176#1#HTML" expanded="true" />
+                <element signature="e#46652#46659#1#HTML" expanded="true" />
+                <element signature="e#65105#65111#0#HTML" expanded="true" />
+                <element signature="e#65562#65569#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -244,12 +242,12 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Car.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/CarModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -1043,12 +1041,20 @@
       <option name="presentableId" value="Default" />
       <updated>1501845349169</updated>
       <workItem from="1501845360124" duration="11120000" />
-      <workItem from="1501867852878" duration="7275000" />
+      <workItem from="1501867852878" duration="7443000" />
     </task>
+    <task id="LOCAL-00001" summary="Register Servlet Car Servlet Transaction Servlet User Model Changes">
+      <created>1501905490209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501905490209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18395000" />
+    <option name="totallyTimeSpent" value="18563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -1101,6 +1107,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Register Servlet Car Servlet Transaction Servlet User Model Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register Servlet Car Servlet Transaction Servlet User Model Changes" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -1114,7 +1124,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#46169#46176#1#HTML" expanded="true" />
+            <element signature="e#46652#46659#1#HTML" expanded="true" />
+            <element signature="e#65105#65111#0#HTML" expanded="true" />
+            <element signature="e#65562#65569#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,7 +1236,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#46169#46176#1#HTML" expanded="true" />
+            <element signature="e#46652#46659#1#HTML" expanded="true" />
+            <element signature="e#65105#65111#0#HTML" expanded="true" />
+            <element signature="e#65562#65569#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1370,14 +1400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1431,6 +1453,24 @@
         <state relative-caret-position="187">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#46169#46176#1#HTML" expanded="true" />
+            <element signature="e#46652#46659#1#HTML" expanded="true" />
+            <element signature="e#65105#65111#0#HTML" expanded="true" />
+            <element signature="e#65562#65569#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
