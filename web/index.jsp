@@ -30,21 +30,25 @@
         <div class="motto">
             <h1 class="title-uppercase">Trade & Exchange</h1>
 
-            <ul class="nav nav-pills nav-pills-danger" role="tablist">
-                <li>
-                    <a href="#description" role="tab" data-toggle="tab">
-                        List used cars
-                    </a>
-                </li>
-                <li>
-                    <a href="#concept" role="tab" data-toggle="tab">
-                        List new cars
-                    </a>
-                </li>
-            </ul>
+            <div style="width: 40%; margin-left: 30%;">
+                <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
+                    <li class="active">
+                        <a href="#description" role="tab" data-toggle="tab">
+                            List used cars
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#concept" role="tab" data-toggle="tab">
+                            List new cars
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
-</div>
+</div
+
 <div>
     <%@include file="includes/_footer.jsp" %>
 </div>
