@@ -55,4 +55,13 @@ public class CarModel {
 
         return status;
     }
+
+    public List<Car> searchCarsByName(String name) {
+        List<Car> searchCarList = (List<Car>) client
+                                    .target(URL+"/search/"+name)
+                                    .request(MediaType.TEXT_PLAIN)
+                                    .accept(MediaType.APPLICATION_JSON)
+                                    .get(Car.class);
+        return searchCarList;
+    }
 }
