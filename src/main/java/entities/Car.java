@@ -22,34 +22,35 @@ public class Car {
     private String registration_date;
     private String registration_type;
     private String rto_location;
-    private Date date_of_reg_on_website;
+//    private Date date_of_reg_on_website;
     private double mileage;
     private int seating_capacity;
     private long owned_by;
 
-    public Car(){
+    public Car() {
     }
 
-    public Car(String model_name,String brand_name,String engine,String city,String fuel,String odo_reading,String color,int no_of_owners,boolean power_steering,String insurance,String insurance_expiry,int manufacturing_year,String registration_type,String rto_location,Date date_of_reg_on_website,Double mileage,int seating_capacity,long owned_by){
-        this.model_name=model_name;
-        this.brand_name=brand_name;
-        this.engine=engine;
-        this.city=city;
-        this.fuel=fuel;
-        this.odo_reading=odo_reading;
-        this.color=color;
-        this.no_of_owners=no_of_owners;
-        this.power_steering=power_steering;
-        this.insurance=insurance;
-        this.insurance_expiry=insurance_expiry;
-        this.manufacturing_year=manufacturing_year;
-        this.registration_type=registration_type;
-        this.rto_location=rto_location;
-        this.date_of_reg_on_website=date_of_reg_on_website;
-        this.mileage=mileage;
-        this.seating_capacity=seating_capacity;
-        this.owned_by=owned_by;
+    public Car(String model_name, String brand_name, String engine, String city, String fuel, String odo_reading, String color, int no_of_owners, boolean power_steering, String insurance, String insurance_expiry, int manufacturing_year, String registration_type, String rto_location, Double mileage, int seating_capacity, long owned_by) {
+        this.model_name = model_name;
+        this.brand_name = brand_name;
+        this.engine = engine;
+        this.city = city;
+        this.fuel = fuel;
+        this.odo_reading = odo_reading;
+        this.color = color;
+        this.no_of_owners = no_of_owners;
+        this.power_steering = power_steering;
+        this.insurance = insurance;
+        this.insurance_expiry = insurance_expiry;
+        this.manufacturing_year = manufacturing_year;
+        this.registration_type = registration_type;
+        this.rto_location = rto_location;
+//        this.date_of_reg_on_website = date_of_reg_on_website;
+        this.mileage = mileage;
+        this.seating_capacity = seating_capacity;
+        this.owned_by = owned_by;
     }
+
     public long getOwned_by() {
         return owned_by;
     }
@@ -74,10 +75,6 @@ public class Car {
         this.mileage = mileage;
     }
 
-    public Date getDate_of_regOnWebsite() {
-        return date_of_reg_on_website;
-    }
-
     public String getEngine() {
         return engine;
     }
@@ -92,18 +89,6 @@ public class Car {
 
     public void setRegistration_date(String registration_date) {
         this.registration_date = registration_date;
-    }
-
-    public Date getDate_of_reg_on_website() {
-        return date_of_reg_on_website;
-    }
-
-    public void setDate_of_reg_on_website(Date date_of_reg_on_website) {
-        this.date_of_reg_on_website = date_of_reg_on_website;
-    }
-
-    public void setDate_of_regOnWebsite(Date date_of_regOnWebsite) {
-        this.date_of_reg_on_website = date_of_regOnWebsite;
     }
 
     public String getRto_location() {
@@ -210,7 +195,7 @@ public class Car {
         this.id = id;
     }
 
-    public void commit(){
+    public void commit() {
 
     }
 

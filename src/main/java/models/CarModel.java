@@ -24,7 +24,10 @@ public class CarModel {
         Car car = client
                 .target(URL + "car/" + id)
                 .request(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
+
+        System.out.println(car.getBrand_name());
 
         return car;
     }
