@@ -4,11 +4,11 @@ import entities.*;
 import sun.misc.BASE64Encoder;
 import utils.Constants;
 import utils.GsonMessageBodyHandler;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 public class UserModel {
@@ -33,14 +33,14 @@ public class UserModel {
     }
 
     public Status addUser(User user) {
-
+        System.out.println(URL_USER + Constants.URL_USER_CREATE);
         Status status = client
                 .target(URL_USER + Constants.URL_USER_CREATE)
                 .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.TEXT_PLAIN)
-                .post(Entity.json(user), Status.class);
-
-        return status;
+                .post(Entity.json(user),Status.class);
+        System.out.println("status");
+       return status;
+       //return new Status(Integer.parseInt(status.substring(0,1)),status.substring(2));
     }
 
     public Status deleteUser(long id) {

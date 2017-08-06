@@ -21,7 +21,7 @@ public class RegisterServlet extends HttpServlet {
         user.setUsername(req.getParameter("username"));
         user.setEmail(req.getParameter("email"));
         user.setPhone(req.getParameter("phone"));
-
+        user.setPassword(req.getParameter("password"));
         Status status = new UserModel().addUser(user);
 
         if (status.getCode() == 1) {
