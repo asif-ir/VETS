@@ -35,10 +35,14 @@
                 <h2>Used Cars</h2>
                 <hr>
                 <%
-                    for (Car car : new CarModel().getCarList(0)) {
+                    for (Car car : new CarModel().getCarList("used")) {
                 %>
                 <div class="row">
-
+                    <div class="col-md-4  col-sm-3 col-md-2">
+                        <h4>Thumbnail</h4><br>
+                        <img src="assets/cars/<%= car.getId() %>.jpg" alt="Thumbnail Image" class="img-thumbnail img-responsive">
+                        <p class="text-center"><%= car.getBrand_name() %></p>
+                    </div>
                 </div>
                 <%
                     }

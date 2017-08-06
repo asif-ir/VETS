@@ -11,15 +11,15 @@ public class Car {
     private String brand_name;
     private String engine;
     private String city;
-    private Fuel fuel;
+    private String fuel;
     private String odo_reading;
     private String color;
     private int no_of_owners;
     private boolean power_steering;
     private String insurance;
-    private Date insurance_expiry;
+    private String insurance_expiry;
     private int manufacturing_year;
-    private Date registration_date;
+    private String registration_date;
     private String registration_type;
     private String rto_location;
     private Date date_of_reg_on_website;
@@ -30,7 +30,7 @@ public class Car {
     public Car(){
     }
 
-    public Car(String model_name,String brand_name,String engine,String city,Fuel fuel,String odo_reading,String color,int no_of_owners,boolean power_steering,String insurance,Date insurance_expiry,int manufacturing_year,Date registration_date,String registration_type,String rto_location,Date date_of_reg_on_website,Double mileage,int seating_capacity,long owned_by){
+    public Car(String model_name,String brand_name,String engine,String city,String fuel,String odo_reading,String color,int no_of_owners,boolean power_steering,String insurance,String insurance_expiry,int manufacturing_year,String registration_type,String rto_location,Date date_of_reg_on_website,Double mileage,int seating_capacity,long owned_by){
         this.model_name=model_name;
         this.brand_name=brand_name;
         this.engine=engine;
@@ -43,7 +43,6 @@ public class Car {
         this.insurance=insurance;
         this.insurance_expiry=insurance_expiry;
         this.manufacturing_year=manufacturing_year;
-        this.registration_date=registration_date;
         this.registration_type=registration_type;
         this.rto_location=rto_location;
         this.date_of_reg_on_website=date_of_reg_on_website;
@@ -87,11 +86,11 @@ public class Car {
         this.engine = engine;
     }
 
-    public Date getRegistration_date() {
+    public String getRegistration_date() {
         return registration_date;
     }
 
-    public void setRegistration_date(Date registration_date) {
+    public void setRegistration_date(String registration_date) {
         this.registration_date = registration_date;
     }
 
@@ -123,11 +122,11 @@ public class Car {
         this.registration_type = registration_type;
     }
 
-    public Date getRegistration_data() {
+    public String getRegistration_data() {
         return registration_date;
     }
 
-    public void setRegistration_data(Date registration_data) {
+    public void setRegistration_data(String registration_data) {
         this.registration_date = registration_data;
     }
 
@@ -139,11 +138,11 @@ public class Car {
         this.manufacturing_year = manufacturing_year;
     }
 
-    public Date getInsurance_expiry() {
+    public String getInsurance_expiry() {
         return insurance_expiry;
     }
 
-    public void setInsurance_expiry(Date insurance_expiry) {
+    public void setInsurance_expiry(String insurance_expiry) {
         this.insurance_expiry = insurance_expiry;
     }
 
@@ -187,11 +186,11 @@ public class Car {
         this.odo_reading = odo_reading;
     }
 
-    public Fuel getFuel() {
+    public String getFuel() {
         return fuel;
     }
 
-    public void setFuel(Fuel fuel) {
+    public void setFuel(String fuel) {
         this.fuel = fuel;
     }
 
