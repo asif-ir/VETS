@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-
+        System.out.println(username+":"+password);
         if (new UserModel().authLogin(username, password)) {
             req.setAttribute("message", "Logged in Successfully");
             req.getRequestDispatcher("index.jsp").forward(req, resp);

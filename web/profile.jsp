@@ -41,7 +41,7 @@
                         <img src="../assets/paper_img/chet_faker_2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                     </div>
                     <div class="name">
-                        <h3><%=session.getAttribute("username")%><br /></h3>
+                        <%--<h3><%=session.getAttribute("username")%><br /></h3>--%>
                     </div>
                 </div>
             </div>

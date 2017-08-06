@@ -19,7 +19,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
+    <link href="assets/css/carousel.css">
 </head>
 <body>
 
@@ -47,8 +47,80 @@
 
         </div>
     </div>
-</div
+</div>
+<div class="container">
+    <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                    </div>
 
+                    <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarouselNew">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                    </div>
+
+                    <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarouselNew" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarouselNew" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 <div>
     <%@include file="includes/_footer.jsp" %>
 </div>
@@ -67,4 +139,6 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 
 <script src="assets/js/ct-paper.js"></script>
+<script src="assets/js/carousel.js"></script>
+
 </html>

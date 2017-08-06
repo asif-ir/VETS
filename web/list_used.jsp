@@ -36,26 +36,30 @@
             <div>
                 <h2 style="color: #00bbff">New Cars</h2>
                 <hr>
-                <%
+                <%!
                     List<Car> cars = new CarModel().getCarList("used");
-
                 %>
                 <%
-                for(Car car:cars){
+                    for (Car car : cars) {
                 %>
-                <a href="">
+                <a href="view_car.jsp?id=<%=car.getId()%>">
                     <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
                         <div class="col-md-4 col-sm-3 col-md-2">
-                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4><br>
-                            <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>" class="img-thumbnail img-responsive">
+                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%>
+                            </h4><br>
+                            <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>"
+                                 class="img-thumbnail img-responsive">
                         </div>
                         <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
                             <br><br>
-                            <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%></button>
+                            <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%>
+                            </button>
                             <br><br>
-                            <p class=""><em><strong>Manufacturing Year: </strong></em><%=car.getManufacturing_year()%></p>
+                            <p class=""><em><strong>Manufacturing Year: </strong></em><%=car.getManufacturing_year()%>
+                            </p>
                             <br>
-                            <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%></p>
+                            <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%>
+                            </p>
                             <br>
                             <p class=""><em><strong>Odometer Reading: </strong></em><%=car.getOdo_reading()%> kms</p>
                         </div>
@@ -63,7 +67,6 @@
                     <br>
                 </a>
                 <%
-
                     }
                 %>
 
