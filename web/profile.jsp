@@ -1,3 +1,6 @@
+<%@ page import="entities.Car" %>
+<%@ page import="models.UserModel" %>
+<%@ page import="models.CarModel" %>
 <!doctype html>
 <jsp:include page="includes/_session_validate.jsp"></jsp:include>
 <html lang="en">
@@ -46,6 +49,25 @@
                     <h2>My Unsold Cars</h2>
                     <hr>
 
+                    <%
+//                        for (Car car: new CarModel().getCarList(session.getAttribute("username").toString())) {
+                            for (Car car: new UserModel().getMyUnsoldCars("asif")) {
+                    %>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <h4>Thumbnail</h4><br>
+                                <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>" class="img-thumbnail img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-2">
+
+                        </div>
+                    </div>
+
+                    <%
+                        }
+                    %>
                 </div>
             </div>
         </div>

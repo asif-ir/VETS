@@ -1,5 +1,7 @@
 <%@ page import="entities.Car" %>
 <%@ page import="models.CarModel" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Iterator" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,8 +36,11 @@
             <div>
                 <h2>Used Cars</h2>
                 <hr>
+                <%!
+                    List<Car> cars = new CarModel().getCarList("used");
+                %>
                 <%
-                    for (Car car : new CarModel().getCarList("used")) {
+                    for(Car car:cars){
                 %>
                 <div class="row">
                     <div class="col-md-4  col-sm-3 col-md-2">

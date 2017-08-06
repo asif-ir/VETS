@@ -1,10 +1,13 @@
 package models;
 
+import com.sun.jersey.api.client.GenericType;
+import com.sun.jersey.api.client.WebResource;
 import entities.Car;
 import entities.Status;
 import utils.GsonMessageBodyHandler;
 
-import javax.ws.rs.client.Client;
+import com.sun.jersey.api.client.Client;
+//import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
@@ -14,7 +17,7 @@ import java.util.List;
  * Created by rawlooa on 8/4/2017.
  */
 public class CarModel {
-    private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
+    private javax.ws.rs.client.Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
     private String URL = "http://localhost:8080/";
 
     public Car getCar(long id) {
@@ -31,7 +34,7 @@ public class CarModel {
                 .target(URL + "car/list")
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .get(Car.class);
+                .get(List.class);
 
         return carList;
     }
@@ -41,7 +44,10 @@ public class CarModel {
                 .target(URL+"car/list-" + type.toLowerCase())
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .get(Car.class);
+                .get(List.class);
+
+//        System.out.println("------------------------\n");
+//        System.out.println(carList.get(0).getBrand_name());
 
         return carList;
     }
