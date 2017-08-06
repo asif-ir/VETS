@@ -28,7 +28,7 @@ public class CarModel {
 
     public List<Car> getCarList() {
         List<Car> carList = (List<Car>) client
-                .target(URL+"car/list")
+                .target(URL + "car/list")
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
@@ -38,16 +38,16 @@ public class CarModel {
 
     public Status addCar(Car car) {
         Status status = client
-                        .target(URL+"car/create")
-                        .request(MediaType.APPLICATION_JSON)
-                        .post(Entity.json(car),Status.class);
+                .target(URL + "car/create")
+                .request(MediaType.APPLICATION_JSON)
+                .post(Entity.json(car), Status.class);
 
         return status;
     }
 
     public Status deleteCar(long id) {
         Status status = client
-                .target(URL+"car/delete"+id)
+                .target(URL + "car/delete" + id)
                 .request(MediaType.TEXT_PLAIN)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Status.class);
