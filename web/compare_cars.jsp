@@ -34,12 +34,13 @@
                 <hr>
 
                 <div class="container-fluid">
-
+                    <input type="text" name="cmp_car_t1" id="cmp_car_t1"> <button class="btn btn-simple" on><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input type="text" name="cmp_car_t2" id="cmp_car_t2"> <button class="btn btn-simple"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
         <div class="footer register-footer text-center">
-            <h6>&copy; 2015, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+            <h6>&copy; 2017, made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>
