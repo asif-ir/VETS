@@ -33,7 +33,7 @@
         <div class="filter-black"></div>
         <div class="container">
             <div>
-                <h2 style="color: #00bbff">New Cars</h2>
+                <h2 style="color: #00bbff">Used Cars</h2>
                 <hr>
                 <%!
                     List<Car> cars = new CarModel().getCarList("used");

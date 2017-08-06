@@ -1,4 +1,7 @@
 <%@ page import="models.UserModel" %>
+<%@ page import="models.CarModel" %>
+<%@ page import="entities.Car" %>
+<%@ page import="java.util.List" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,7 +28,6 @@
 
 <div class="wrapper">
     <%@ include file="includes/_navbar.jsp" %>
-
     <div class="demo-header demo-header-image">
         <div class="motto">
             <h1 class="title-uppercase">Trade & Exchange</h1>
@@ -49,82 +51,93 @@
     </div>
 </div>
 <div class="container">
-    <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
+    <h3>Recent Used Cars Updated.</h3>
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
                 <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-                    </div>
+                    <%
+                        List<Car> carList = (new CarModel()).getUsedCarList(10);
 
-                    <!--  Example item end -->
+                        int count = 0;
+
+                        for (Car car : carList) {
+                            if (count++ == 0) {
+                    %>
+                    <div class="item active">
+                        <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
+                                src="assets/cars/<%=car.getId()%>.jpg"
+                                class="img-responsive">
+                        </a></div>
+                    </div>
+                    <%
+                    } else {
+                    %>
+                    <div class="item"><%--assets/cars/{id}+".jpg"--%>
+                        <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
+                                src="assets/cars/<%=car.getId()%>.jpg"
+                                class="img-responsive">
+                        </a></div>
+                    </div>
+                    <%
+                            }
+                        }
+                    %>
                 </div>
-                <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                        class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
         </div>
     </div>
 </div>
 
 <div class="container">
-    <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
+    <h3>Recent New Car Arrivals</h3>
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarouselNew">
                 <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-                    </div>
+                    <%
+                        List<Car> carListNew = (new CarModel()).getNewCarList(10);
 
-                    <!--  Example item end -->
+                        count = 0;
+
+                        for (Car car : carListNew) {
+                            if (count++ == 0) {
+                    %>
+                    <div class="item active">
+                        <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
+                                src="assets/cars/<%=car.getId()%>.jpg"
+                                class="img-responsive">
+                        </a></div>
+                    </div>
+                    <%
+                    } else {
+                    %>
+                    <div class="item"><%--assets/cars/{id}+".jpg"--%>
+                        <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
+                                src="assets/cars/<%=car.getId()%>.jpg"
+                                class="img-responsive">
+                        </a></div>
+                    </div>
+                    <%
+                            }
+                        }
+                    %>
                 </div>
-                <a class="left carousel-control" href="#theCarouselNew" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#theCarouselNew" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                <a class="left carousel-control" href="#theCarouselNew" data-slide="prev"><i
+                        class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarouselNew" data-slide="next"><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
         </div>
     </div>
+    <div>
+        <%@include file="includes/_footer.jsp" %>
+    </div>
 </div>
-<div>
-    <%@include file="includes/_footer.jsp" %>
-</div>
-
 </body>
 
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>

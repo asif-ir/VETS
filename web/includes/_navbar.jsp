@@ -28,6 +28,9 @@
                     if (session.getAttribute("username") != null) {
                 %>
                 <li>
+                    <a href="add_car.jsp" class="btn btn-simple">Add Car</a>
+                </li>
+                <li>
                     <a href="logout" class="btn btn-simple">Logout</a>
                 </li>
                 <%

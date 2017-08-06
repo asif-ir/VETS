@@ -6,6 +6,7 @@ import com.sun.jersey.api.client.GenericType;
 import com.sun.jersey.api.client.WebResource;
 import entities.Car;
 import entities.Status;
+import utils.Constants;
 import utils.GsonMessageBodyHandler;
 
 import com.sun.jersey.api.client.Client;
@@ -22,7 +23,7 @@ import java.util.List;
  */
 public class CarModel {
     private javax.ws.rs.client.Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
-    private String URL = "http://localhost:8080/";
+    private String URL = Constants.URL;
 
     public Car getCar(long id) {
         Car car = client
@@ -58,6 +59,36 @@ public class CarModel {
                 client
                         .target(URL + "car/list-"+type.toLowerCase())
                         .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
+    }
+
+    public List<Car> getUsedCarList(Integer top) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list_index_used?top="+top.toString())
+                        .request(MediaType.TEXT_PLAIN)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
+    }
+
+    public List<Car> getNewCarList(Integer top) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list_index_new?top="+top.toString())
+                        .request(MediaType.TEXT_PLAIN)
                         .accept(MediaType.APPLICATION_JSON)
                         .get(String.class)
                 ,
