@@ -28,23 +28,7 @@ public class AddCarServlet extends HttpServlet {
         car.setBrand_name(req.getParameter("brand_name"));
         car.setEngine(req.getParameter("engine"));
         car.setCity(req.getParameter("city"));
-        switch (Integer.parseInt(req.getParameter("fuel"))) {
-            case 0:
-                car.setFuel(Fuel.petrol);
-                break;
-            case 1:
-                car.setFuel(Fuel.diesel );
-                break;
-            case 2:
-                car.setFuel(Fuel.cng);
-                break;
-            case 4:
-                car.setFuel(Fuel.lpg);
-                break;
-            default:
-                car.setFuel(Fuel.others);
-                break;
-        }
+        car.setFuel(req.getParameter("fuel"));
         car.setOdo_reading(req.getParameter("odo_reading"));
         car.setColor(req.getParameter("color"));
         car.setNo_of_owners(Integer.parseInt(req.getParameter("no_of_owners")));

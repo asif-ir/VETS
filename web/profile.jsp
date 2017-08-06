@@ -46,7 +46,6 @@
                     <h2>My Unsold Cars</h2>
                     <hr>
 
-                    <%--TODO: List all of this users unsold cars--%>
                 </div>
             </div>
         </div>

@@ -14,7 +14,6 @@ import java.util.List;
  * Created by rawlooa on 8/4/2017.
  */
 public class CarModel {
-
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
     private String URL = "http://localhost:8080/";
 
@@ -29,7 +28,17 @@ public class CarModel {
 
     public List<Car> getCarList() {
         List<Car> carList = (List<Car>) client
-                .target(URL+"car/list")
+                .target(URL + "car/list")
+                .request(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .get(Car.class);
+
+        return carList;
+    }
+
+    public List<Car> getCarList(String type) {
+        List<Car> carList = (List<Car>) client
+                .target(URL+"car/list-" + type.toLowerCase())
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
@@ -39,16 +48,16 @@ public class CarModel {
 
     public Status addCar(Car car) {
         Status status = client
-                        .target(URL+"car/create")
-                        .request(MediaType.APPLICATION_JSON)
-                        .post(Entity.json(car),Status.class);
+                .target(URL + "car/create")
+                .request(MediaType.APPLICATION_JSON)
+                .post(Entity.json(car), Status.class);
 
         return status;
     }
 
     public Status deleteCar(long id) {
         Status status = client
-                .target(URL+"car/delete"+id)
+                .target(URL + "car/delete" + id)
                 .request(MediaType.TEXT_PLAIN)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Status.class);

@@ -13,11 +13,11 @@ import java.util.List;
 
 public class UserModel {
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
-    private String URL = Constants.URL;
+    private String URL_USER = Constants.URL + Constants.URL_USER;
 
     public User getUser(long id) {
         User user = client
-                .target(URL + Constants.URL_USER + id)
+                .target(URL_USER + Constants.URL_USERNAME + id)
                 .request(MediaType.APPLICATION_JSON)
                 .get(User.class);
 
@@ -26,7 +26,7 @@ public class UserModel {
 
     public List<User> getUsers() {
         List<User> userList = client
-                .target(URL + Constants.URL_USER_LIST)
+                .target(URL_USER + Constants.URL_USER_LIST)
                 .request(MediaType.APPLICATION_JSON)
                 .get(List.class);
         return userList;
@@ -35,7 +35,7 @@ public class UserModel {
     public Status addUser(User user) {
 
         Status status = client
-                .target(URL + Constants.URL_CREATE_USER)
+                .target(URL_USER + Constants.URL_USER_CREATE)
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.TEXT_PLAIN)
                 .post(Entity.json(user), Status.class);
@@ -45,7 +45,7 @@ public class UserModel {
 
     public Status deleteUser(long id) {
         Status status = client
-                .target(URL + Constants.URL_DELETE_USER + id)
+                .target(URL_USER + Constants.URL_USER_DELETE + id)
                 .request(MediaType.TEXT_PLAIN).get(Status.class);
 
         return status;
@@ -55,7 +55,7 @@ public class UserModel {
         String authString = username + ":" + password;
         String autjStringEnc = new BASE64Encoder().encode(authString.getBytes());
 
-        String result = client.target(URL + Constants.URL_AUTH)
+        String result = client.target(URL_USER + Constants.URL_USER_AUTH)
                 .request(MediaType.TEXT_PLAIN).post(Entity.json(autjStringEnc), String.class);
 
         return result.equalsIgnoreCase("true");
