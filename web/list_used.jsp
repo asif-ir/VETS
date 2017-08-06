@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="../assets/paper_img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>Used Cars | Trade & Exchange</title>
+    <title>New Cars | Trade & Exchange</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
@@ -34,22 +34,36 @@
         <div class="filter-black"></div>
         <div class="container">
             <div>
-                <h2>Used Cars</h2>
+                <h2 style="color: #00bbff">New Cars</h2>
                 <hr>
-                <%!
+                <%
                     List<Car> cars = new CarModel().getCarList("used");
+
                 %>
                 <%
-                    for(Car car:cars){
+                for(Car car:cars){
                 %>
-                <div class="row">
-                    <div class="col-md-4  col-sm-3 col-md-2">
-                        <h4>Thumbnail</h4><br>
-                        <img src="assets/cars/<%= car.getId() %>.jpg" alt="Thumbnail Image" class="img-thumbnail img-responsive">
-                        <p class="text-center"><%= car.getBrand_name() %></p>
+                <a href="">
+                    <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
+                        <div class="col-md-4 col-sm-3 col-md-2">
+                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4><br>
+                            <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>" class="img-thumbnail img-responsive">
+                        </div>
+                        <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
+                            <br><br>
+                            <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%></button>
+                            <br><br>
+                            <p class=""><em><strong>Manufacturing Year: </strong></em><%=car.getManufacturing_year()%></p>
+                            <br>
+                            <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%></p>
+                            <br>
+                            <p class=""><em><strong>Odometer Reading: </strong></em><%=car.getOdo_reading()%> kms</p>
+                        </div>
                     </div>
-                </div>
+                    <br>
+                </a>
                 <%
+
                     }
                 %>
 

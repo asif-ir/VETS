@@ -23,7 +23,6 @@
 <body>
 
 <%@include file="includes/_login_register_navbar.jsp"%>
-<%@include file="includes/_message.jsp"%>
 <div class="wrapper">
     <div class="register-background">
         <div class="filter-black"></div>
@@ -32,6 +31,9 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
                     <div class="register-card">
                         <h3 class="title">Login</h3>
+
+                        <br><%@include file="includes/_message.jsp"%>
+
                         <form class="register-form" method="post" action="login">
                             <label>Username</label>
                             <input type="text" class="form-control" name="username" id="username" placeholder="Username">

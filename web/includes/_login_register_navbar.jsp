@@ -9,23 +9,37 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="">Trade & Exchange</a>
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a href="list_used.jsp" class="btn btn-simple">Used Cars</a>
+                </li>
+                <li>
+                    <a href="list_new.jsp" class="btn btn-simple">New Cars</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation-example-2">
             <ul class="nav navbar-nav navbar-right">
+                <%
+                    if (session.getAttribute("username") != null) {
+                %>
                 <li>
-                    <a href="#" class="btn btn-simple">Components</a>
+                    <a href="logout" class="btn btn-simple">Logout</a>
+                </li>
+                <%
+                } else {
+                %>
+                <li>
+                    <a href="register.jsp" class="btn btn-simple">Register</a>
                 </li>
                 <li>
-                    <a href="#" class="btn btn-simple">Tutorial</a>
+                    <a href="login.jsp" class="btn btn-simple">Login</a>
                 </li>
-                <li>
-                    <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
-                </li>
+                <%
+                    }
+                %>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-->

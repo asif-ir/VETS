@@ -23,7 +23,6 @@
 </head>
 <body>
 
-<%@include file="includes/_message.jsp"%>
 <%@include file="includes/_login_register_navbar.jsp" %>
 
 <div class="wrapper">
@@ -34,6 +33,9 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
                     <div class="register-card">
                         <h3 class="title">Register Car To Sell</h3>
+
+                        <br><%@include file="includes/_message.jsp"%>
+
                         <form class="register-form" method="post" action="add-car">
                             <label>Model Name</label>
                             <input type="text" class="form-control" name="model_name" id="model_name"
