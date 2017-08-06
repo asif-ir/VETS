@@ -28,7 +28,6 @@
 
 <div class="wrapper">
     <%@ include file="includes/_navbar.jsp" %>
-
     <div class="demo-header demo-header-image">
         <div class="motto">
             <h1 class="title-uppercase">Trade & Exchange</h1>
