@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <div class="copyright pull-right">
-            &copy; 2015, made with <i class="fa fa-heart heart">
+            &copy; 2015, made with <i class="fa fa-heart heart"></i>
         </div>
     </div>
 </footer>

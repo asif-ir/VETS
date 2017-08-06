@@ -30,7 +30,7 @@ git <!doctype html>
     <div class="profile-background">
         <div class="filter-black"></div>
     </div>
-        <%
+        <%!
         Car car=new CarModel().getCar(2);
     %>
     <div class="container">
@@ -40,7 +40,7 @@ git <!doctype html>
                 <th>Brand Name :</th>
             </tr>
             <tr>
-                <td><%=car.getModel_name().toString()%></td>
+                <td><%=car.getModel_name()%></td>
                 <td><%=car.getBrand_name().toString()%></td>
             </tr>
         </table>
