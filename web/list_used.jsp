@@ -1,7 +1,6 @@
 <%@ page import="entities.Car" %>
 <%@ page import="models.CarModel" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.Iterator" %>
 <!doctype html>
 <html lang="en">
 <head>
