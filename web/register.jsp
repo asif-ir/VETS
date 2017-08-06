@@ -41,6 +41,12 @@
                             <label>Last Name</label>
                             <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name">
 
+                            <label>Email</label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="email">
+
+                            <label>Phone</label>
+                            <input type="number" class="form-control" name="phone" id="phone" placeholder="phone">
+
                             <label>Username</label>
                             <input type="text" class="form-control" name="username" id="username" placeholder="Username">
 
