@@ -11,9 +11,11 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
+import static utils.Constants.URL;
+
 public class UserModel {
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
-    private String URL_USER = Constants.URL + Constants.URL_USER;
+    private String URL_USER = URL + Constants.URL_USER;
 
     public User getUser(long id) {
         User user = client
@@ -59,5 +61,15 @@ public class UserModel {
                 .request(MediaType.TEXT_PLAIN).post(Entity.json(autjStringEnc), String.class);
 
         return result.equalsIgnoreCase("true");
+    }
+
+    public List<Car> getMyUnsoldCars(String username) {
+        List<Car> carList = (List<Car>) client
+                .target(URL + "user/my-cars/" + username)
+                .request(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .get(Car.class);
+
+        return carList;
     }
 }

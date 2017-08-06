@@ -34,7 +34,7 @@
                 <hr>
 
                 <div class="container-fluid">
-                    <div class="col-md-6">
+r                    <div class="col-md-6">
                         <input type="text" name="cmp_car_t1" id="cmp_car_t1">
                         <button class="btn btn-simple" on><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
