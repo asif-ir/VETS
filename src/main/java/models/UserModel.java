@@ -54,11 +54,13 @@ public class UserModel {
     }
 
     public boolean authLogin(String username, String password) {
+        System.out.println("in authLogin");
         String authString = username + ":" + password;
-        String autjStringEnc = new BASE64Encoder().encode(authString.getBytes());
+        String authStringEnc =/* authString;*/new BASE64Encoder().encode(authString.getBytes());
 
         String result = client.target(URL_USER + Constants.URL_USER_AUTH)
-                .request(MediaType.TEXT_PLAIN).post(Entity.json(autjStringEnc), String.class);
+                .request(MediaType.TEXT_PLAIN)//.header("Authorization","Basic "+authStringEnc)
+                .post(Entity.json(authStringEnc),String.class);
 
         return result.equalsIgnoreCase("true");
     }
