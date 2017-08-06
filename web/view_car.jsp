@@ -1,6 +1,10 @@
-git <!doctype html>
+<!doctype html>
 <%@ page import="models.CarModel" %>
 <%@ page import="entities.Car" %>
+
+<%!
+    Car car=new CarModel().getCar(1);
+%>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -30,19 +34,63 @@ git <!doctype html>
     <div class="profile-background">
         <div class="filter-black"></div>
     </div>
-        <%!
-        Car car=new CarModel().getCar(2);
-    %>
+
+    <div class="img-container">
+        <img src="assets/cars/<%=car.getId()%>.jpg" alt="Cinque Terre" class="img img-rounded" width="auto" height="auto">
+    </div>
     <div class="container">
         <table class="table table-stripped table-hover">
             <tr>
-                <th>Model Name :</th>
-                <th>Brand Name :</th>
+                <th>Model Name :</th><td><%=car.getModel_name()%></td>
             </tr>
+
             <tr>
-                <td><%=car.getModel_name()%></td>
-                <td><%=car.getBrand_name().toString()%></td>
+                <th>Brand Name :</th><td><%=car.getBrand_name()%></td>
+            <tr/>
+
+            <tr>
+                <th>Engine :</th><td><%=car.getEngine()%></td>
             </tr>
+
+            <tr>
+                <th>City :</th><td><%=car.getCity()%></td>
+            </tr>
+
+            <tr>
+                <th>Fuel :</th><td><%=car.getFuel()%></td>
+            </tr>
+
+            <tr>
+                <th>Odometer Reading :</th><td><%=car.getOdo_reading()%></td>
+            </tr>
+
+            <tr>
+                <th>Color :</th><td><%=car.getColor()%></td>
+            </tr>
+
+            <tr>
+                <th>Power Steering :</th><td><%=car.isPower_steering()%></td>
+            </tr>
+
+            <tr>
+                <th>Insurance :</th><td><%=car.getInsurance()%></td>
+            </tr>
+
+            <tr>
+                <th>Manufacturing Year :</th><td><%=car.getManufacturing_year()%></td>
+            </tr>
+
+            <tr>
+                <th>Mileage :</th><td><%=car.getMileage()%></td>
+            </tr>
+
+            <tr>
+                <th>Seating capacity :</th><td><%=car.getSeating_capacity() %></td>
+            </tr>
+            <%--<tr>--%>
+                <%--<td><%=car.getModel_name()%></td>--%>
+                <%--<td><%=car.getBrand_name().toString()%></td>--%>
+            <%--</tr>--%>
         </table>
     </div>
     <%@ include file="includes/_footer.jsp" %>
