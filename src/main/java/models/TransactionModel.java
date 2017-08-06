@@ -1,7 +1,7 @@
 package models;
 
-import com.sun.jersey.api.client.ClientResponse;
 import entities.*;
+import utils.Constants;
 import utils.GsonMessageBodyHandler;
 
 import javax.ws.rs.client.Client;
@@ -15,11 +15,11 @@ import java.util.List;
  */
 public class TransactionModel {
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
-
+    private String URL_TRANSACTION = Constants.URL+Constants.URL_TRANSACTION;
     public Status addTransaction(Transaction transaction){
 
         Status status=client
-                .target("http://localhost:8080/create")
+                .target(URL_TRANSACTION + Constants.URL_TRANS_CREATE)
                 .request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.TEXT_PLAIN)
                 .post(Entity.json(transaction),Status.class);
@@ -29,7 +29,7 @@ public class TransactionModel {
 
     public Transaction getTransaction(long transaction_id) {
         Transaction transaction  = client
-                .target("http://localhost:8080/transactionid/" + transaction_id)
+                .target(URL_TRANSACTION +Constants.URL_TRANS_TRANSID+ transaction_id)
                 .request(MediaType.APPLICATION_JSON)
                 .get(Transaction.class);
 
@@ -38,7 +38,7 @@ public class TransactionModel {
 
     public List<Transaction> getTransaction( ){
         List<Transaction> transactionList = client
-                .target("http://localhost:8080/list")
+                .target(URL_TRANSACTION + Constants.URL_TRANS_LIST)
                 .request(MediaType.APPLICATION_JSON)
                 .get(List.class);
 
@@ -48,7 +48,7 @@ public class TransactionModel {
 
     public Status deleteTransaction(long transaction_id) {
         Status status  = client
-                .target("http://localhost:8080/delete/{transactionid}" + transaction_id)
+                .target(URL_TRANSACTION+Constants.URL_TRANS_DELETE + transaction_id)
                 .request(MediaType.APPLICATION_JSON)
                 .get(Status.class);
 

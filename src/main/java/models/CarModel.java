@@ -14,7 +14,6 @@ import java.util.List;
  * Created by rawlooa on 8/4/2017.
  */
 public class CarModel {
-
     private Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
     private String URL = "http://localhost:8080/";
 
