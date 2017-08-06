@@ -34,7 +34,8 @@
                     <div class="register-card">
                         <h3 class="title">Register Car To Sell</h3>
 
-                        <br><%@include file="includes/_message.jsp"%>
+                        <br>
+                        <%@include file="includes/_message.jsp" %>
 
                         <form class="register-form" method="post" action="add-car">
                             <label>Model Name</label>
@@ -42,7 +43,7 @@
                                    placeholder="Model Name">
 
                             <label>Brand Name</label>
-                            <select class="form-control" name="brand_name" id="brand_name">
+                            <select class="form-control" name="brand_name" id="brand_name" required>
                                 <option selected disabled>Brand Name</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Aston Martin">Aston Martin</option>
@@ -64,11 +65,13 @@
                                 <option value="Tata Motors">Tata Motors</option>
                                 <option value="Volkswagen">Volkswagen</option>
                                 <option value="Volvo">Volvo</option>
+                                <option value="Rolls Royce">Rolls Royce</option>
+                                <option value="Maruti">Maruti</option>
                             </select>
 
                             <label>Engine</label>
-                            <input type="text" class="form-control" name="engine" id="engine"
-                                   placeholder="Engine in cc">
+                            <input type="text" class="form-control" name="engine" id="engine" placeholder="Engine in cc"
+                                   required>
 
                             <label>City</label>
                             <select class="form-control" name="city" id="city">
@@ -99,14 +102,15 @@
 
                             <label>Odometer Reading</label>
                             <input type="number" class="form-control" name="odo_reading" id="odo_reading"
-                                   placeholder="Odometer reading">
+                                   placeholder="Odometer reading" required>
 
                             <label>Color</label>
-                            <input type="text" class="form-control" name="color" id="color" placeholder="Color">
+                            <input type="text" class="form-control" name="color" id="color" placeholder="Color"
+                                   required>
 
                             <label>Number Of Owners </label>
                             <input type="number" class="form-control" name="no_of_owners" id="no_of_owners"
-                                   placeholder="Number Of Owners">
+                                   placeholder="Number Of Owners" required>
 
                             <label>Power Steering</label>
                             <select class="form-control" name="power_steering" id="power_steering">
@@ -116,15 +120,15 @@
 
                             <label>Insurance</label>
                             <input type="text" class="form-control" name="insurance" id="insurance"
-                                   placeholder="Insurance">
+                                   placeholder="Insurance" required>
 
                             <label>Insurance Expiry Date</label>
                             <input type="date" class="form-control" name="insurance_expiry" id="insurance_expiry"
-                                   placeholder="Insurance Expiry Date">
+                                   placeholder="Insurance Expiry Date" required>
 
                             <label>Manufacturing Year</label>
                             <input type="number" class="form-control" name="manufacturing_year" id="manufacturing_year"
-                                   placeholder="Manufacturing Year">
+                                   placeholder="Manufacturing Year" required>
 
                             <label>Registration Date</label>
                             <input type="date" class="form-control" name="registration_date" id="registration_date"
@@ -132,8 +136,7 @@
 
                             <label>Registration Type</label>
                             <select class="form-control" name="registration_type" id="registration_type">
-                                <option selected disabled>Registartion Type</option>
-                                <option value="RDS">RDS</option>
+                                <option value="RDS" selected disabled>RDS</option>
                                 <option value="DMS">RMS</option>
                                 <option value="MNP">MNP</option>
                                 <option value="PDP">PDP</option>
@@ -144,22 +147,15 @@
 
                             <label>RTO Location</label>
                             <input type="text" class="form-control" name="rto_location" id="rto_location"
-                                   placeholder="RTO Location">
-
-                            <label>Date Of Registration on Webiste</label>
-                            <input type="date" class="form-control" name="date_of_reg_on_website"
-                                   id="date_of_reg_on_website" placeholder="Date of Registration on Webiste">
+                                   placeholder="RTO Location" required>
 
                             <label>Mileage</label>
-                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="Mileage">
+                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="Mileage"
+                                   required>
 
                             <label>Seating Capacity</label>
                             <input type="number" class="form-control" name="seating_capacity" id="seating_capacity"
-                                   placeholder="Seating Capacity">
-
-                            <label>Owned By</label>
-                            <input type="text" class="form-control" name="owned_by" id="owned_by"
-                                   placeholder="Owned By">
+                                   placeholder="Seating Capacity" required>
 
                             <button class="btn btn-danger btn-block">Register</button>
                         </form>

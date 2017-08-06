@@ -39,22 +39,22 @@
 
                         <form class="register-form" method="post" action="/register">
                             <label>First Name</label>
-                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name">
+                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name" required>
 
                             <label>Last Name</label>
-                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name">
+                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name" required>
 
                             <label>Email</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="email">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="email" required>
 
                             <label>Phone</label>
-                            <input type="number" class="form-control" name="phone" id="phone" placeholder="phone">
+                            <input type="number" class="form-control" name="phone" id="phone" placeholder="phone" required>
 
                             <label>Username</label>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
 
                             <label>Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
 
                             <input type="submit" class="btn btn-danger btn-block" value="Register">
                         </form>
