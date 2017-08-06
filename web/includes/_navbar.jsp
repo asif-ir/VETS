@@ -1,3 +1,4 @@
+<%@ page import="utils.Constants" %>
 <nav class="navbar navbar-ct-transparent navbar-relative " role="navigation-demo" id="register-navbar"
      style="color: white;">
     <div class="container">
@@ -9,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">Trade & Exchange</a>
+            <a class="navbar-brand" href="<%=Constants.ROOT_URL%>">Trade & Exchange</a>
             <ul class="nav navbar-nav navbar-left">
                 <li>
                     <a href="list_used.jsp" class="btn btn-simple">Used Cars</a>

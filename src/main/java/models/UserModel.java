@@ -1,14 +1,19 @@
 package models;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import entities.*;
 import sun.misc.BASE64Encoder;
 import utils.Constants;
 import utils.GsonMessageBodyHandler;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 import static utils.Constants.URL;
@@ -39,10 +44,10 @@ public class UserModel {
         Status status = client
                 .target(URL_USER + Constants.URL_USER_CREATE)
                 .request(MediaType.APPLICATION_JSON)
-                .post(Entity.json(user),Status.class);
+                .post(Entity.json(user), Status.class);
         System.out.println("status");
-       return status;
-       //return new Status(Integer.parseInt(status.substring(0,1)),status.substring(2));
+        return status;
+        //return new Status(Integer.parseInt(status.substring(0,1)),status.substring(2));
     }
 
     public Status deleteUser(long id) {
@@ -66,11 +71,16 @@ public class UserModel {
     }
 
     public List<Car> getMyUnsoldCars(String username) {
-        List<Car> carList = (List<Car>) client
-                .target(URL + "user/my-cars/" + username)
-                .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)
-                .get(Car.class);
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "user/user-cars/"+username)
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
 
         return carList;
     }

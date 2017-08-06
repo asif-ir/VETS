@@ -1,5 +1,7 @@
 package models;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.sun.jersey.api.client.GenericType;
 import com.sun.jersey.api.client.WebResource;
 import entities.Car;
@@ -11,6 +13,8 @@ import com.sun.jersey.api.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,24 +37,31 @@ public class CarModel {
     }
 
     public List<Car> getCarList() {
-        List<Car> carList = (List<Car>) client
-                .target(URL + "car/list")
-                .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)
-                .get(List.class);
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list")
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
 
         return carList;
     }
 
     public List<Car> getCarList(String type) {
-        List<Car> carList = (List<Car>) client
-                .target(URL+"car/list-" + type.toLowerCase())
-                .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)
-                .get(List.class);
-
-//        System.out.println("------------------------\n");
-//        System.out.println(carList.get(0).getBrand_name());
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list-"+type.toLowerCase())
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
 
         return carList;
     }

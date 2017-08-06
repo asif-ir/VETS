@@ -1,6 +1,10 @@
 package utils;
 
 public interface Constants {
+    // Client
+    String ROOT_URL = "http://localhost:9000/";
+
+    // Web Service
     String URL = "http://localhost:8080/";
     String URL_TRANSACTION = "transaction/";
     String URL_USER = "user/";

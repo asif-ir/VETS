@@ -14,6 +14,7 @@ import java.util.Date;
 import entities.Car;
 import entities.Fuel;
 import entities.Status;
+import models.CarModel;
 
 /**
  * Created by rawlooa on 8/4/2017.
@@ -24,12 +25,12 @@ public class AddCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Car car = new Car();
-        car.setModel_name(req.getParameter("model_name"));
+        car.setBrand_name(req.getParameter("model_name"));
         car.setBrand_name(req.getParameter("brand_name"));
         car.setEngine(req.getParameter("engine"));
         car.setCity(req.getParameter("city"));
         car.setFuel(req.getParameter("fuel"));
-        car.setOdo_reading(req.getParameter("odo_reading"));
+        car.setOdo_reading(Integer.parseInt(req.getParameter("odo_reading")));
         car.setColor(req.getParameter("color"));
         car.setNo_of_owners(Integer.parseInt(req.getParameter("no_of_owners")));
         car.setPower_steering(Boolean.parseBoolean(req.getParameter("power_steering")));

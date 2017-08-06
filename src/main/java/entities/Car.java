@@ -12,7 +12,7 @@ public class Car {
     private String engine;
     private String city;
     private String fuel;
-    private String odo_reading;
+    private int odo_reading;
     private String color;
     private int no_of_owners;
     private boolean power_steering;
@@ -26,11 +26,12 @@ public class Car {
     private double mileage;
     private int seating_capacity;
     private long owned_by;
+    private double price;
 
     public Car() {
     }
 
-    public Car(String model_name, String brand_name, String engine, String city, String fuel, String odo_reading, String color, int no_of_owners, boolean power_steering, String insurance, String insurance_expiry, int manufacturing_year, String registration_type, String rto_location, Double mileage, int seating_capacity, long owned_by) {
+    public Car(String model_name, String brand_name, String engine, String city, String fuel, int odo_reading, String color, int no_of_owners, boolean power_steering, String insurance, String insurance_expiry, int manufacturing_year, String registration_type, String rto_location, Double mileage, int seating_capacity, long owned_by, double price) {
         this.model_name = model_name;
         this.brand_name = brand_name;
         this.engine = engine;
@@ -49,6 +50,7 @@ public class Car {
         this.mileage = mileage;
         this.seating_capacity = seating_capacity;
         this.owned_by = owned_by;
+        this.price = price;
     }
 
     public long getOwned_by() {
@@ -163,11 +165,11 @@ public class Car {
         this.color = color;
     }
 
-    public String getOdo_reading() {
+    public int getOdo_reading() {
         return odo_reading;
     }
 
-    public void setOdo_reading(String odo_reading) {
+    public void setOdo_reading(int odo_reading) {
         this.odo_reading = odo_reading;
     }
 
@@ -213,6 +215,18 @@ public class Car {
 
     public void setModel_name(String model_name) {
         this.model_name = model_name;
+    }
+
+    public void setOwned_by(long owned_by) {
+        this.owned_by = owned_by;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
 
