@@ -23,7 +23,7 @@
 <body>
 
 <%@include file="includes/_login_register_navbar.jsp"%>
-
+<%@include file="includes/_message.jsp"%>
 <div class="wrapper">
     <div class="register-background">
         <div class="filter-black"></div>
@@ -39,7 +39,7 @@
                             <label>Password</label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
 
-                            <button class="btn btn-danger btn-block">Register</button>
+                            <input type="submit" class="btn btn-danger btn-block" value="Login">
                         </form>
                     </div>
                 </div>

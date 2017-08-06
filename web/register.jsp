@@ -1,4 +1,5 @@
 <!doctype html>
+<%@include file="includes/_message.jsp"%>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -33,7 +34,7 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
                     <div class="register-card">
                         <h3 class="title">Register User</h3>
-                        <form class="register-form" method="post" action="add-user">
+                        <form class="register-form" method="post" action="/register">
                             <label>First Name</label>
                             <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name">
 
@@ -46,14 +47,14 @@
                             <label>Password</label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
 
-                            <button class="btn btn-danger btn-block">Register</button>
+                            <input type="submit" class="btn btn-danger btn-block" value="Register">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer register-footer text-center">
-            <h6>&copy; 2015, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+            <h6>&copy; 2017, made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>

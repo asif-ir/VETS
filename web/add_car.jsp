@@ -23,6 +23,7 @@
 </head>
 <body>
 
+<%@include file="includes/_message.jsp"%>
 <%@include file="includes/_login_register_navbar.jsp" %>
 
 <div class="wrapper">

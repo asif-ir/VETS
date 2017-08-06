@@ -1,20 +1,18 @@
 package utils;
 
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.swing.JOptionPane;
+
 /**
  * Created by vijayn on 8/5/2017.
  */
 public class SendEmail {
-    public static void sendEmail(String host,String from,String pass,String to[]) throws MessagingException{
+    public static void sendEmail(String host, String from, String pass, String to[]) throws MessagingException {
 
         /*String host = "smtp.gmail.com";
         String from = "rtsskmit@gmail.com";
@@ -36,12 +34,12 @@ public class SendEmail {
         InternetAddress[] toAddress = new InternetAddress[to.length];
 
         // To get the array of addresses
-        for( int i=0; i < to.length; i++ ) { // changed from a while loop
+        for (int i = 0; i < to.length; i++) { // changed from a while loop
             toAddress[i] = new InternetAddress(to[i]);
         }
         System.out.println(Message.RecipientType.TO);
 
-        for( int i=0; i < toAddress.length; i++) { // changed from a while loop
+        for (int i = 0; i < toAddress.length; i++) { // changed from a while loop
             message.addRecipient(Message.RecipientType.TO, toAddress[i]);
         }
         message.setSubject("sending secert key");
@@ -51,7 +49,6 @@ public class SendEmail {
         transport.connect(host, from, pass);
         transport.sendMessage(message, message.getAllRecipients());
         transport.close();
-        // JOptionPane.showMessageDialog(null,"KEY sucessfully send to mail");
     }
     // public static void main(String a[])
     // {
