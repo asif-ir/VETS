@@ -2,10 +2,15 @@ package utils;
 
 public interface Constants {
     String URL = "http://localhost:8080/";
+    String URL_TRANSACTION = "transaction/";
     String URL_USER = "user/";
-    String URL_USERNAME="user/username/";
-    String URL_USER_LIST = "user/list";
-    String URL_CREATE_USER = "create";
-    String URL_DELETE_USER = "delete/";
-    String URL_AUTH = "auth";
+    String URL_USERNAME = "username/";
+    String URL_USER_LIST = "list";
+    String URL_USER_CREATE = "create";
+    String URL_USER_DELETE = "delete/";
+    String URL_USER_AUTH = "auth";
+    String URL_TRANS_CREATE = "create";
+    String URL_TRANS_TRANSID = "transactionid/";
+    String URL_TRANS_LIST = "list";
+    String URL_TRANS_DELETE = "delete/";
 }
