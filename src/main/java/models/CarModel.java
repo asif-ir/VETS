@@ -71,7 +71,7 @@ public class CarModel {
         }.getType();
         ArrayList<Car> carList = new Gson().fromJson(
                 client
-                        .target(URL + "car/list-"+type.toLowerCase())
+                        .target(URL + "car/list-" + type.toLowerCase())
                         .request(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
                         .get(String.class)
@@ -86,7 +86,7 @@ public class CarModel {
         }.getType();
         ArrayList<Car> carList = new Gson().fromJson(
                 client
-                        .target(URL + "car/list_index_used?top="+top.toString())
+                        .target(URL + "car/list_index_used?top=" + top.toString())
                         .request(MediaType.TEXT_PLAIN)
                         .accept(MediaType.APPLICATION_JSON)
                         .get(String.class)
@@ -98,18 +98,19 @@ public class CarModel {
 
     public Long getUserIdByCarId(long car_id) {
         Long user_id = client
-                .target(URL +"car/getUserId?car_id=" + car_id)
+                .target(URL + "car/getUserId?car_id=" + car_id)
                 .request(MediaType.APPLICATION_JSON)
                 .get(Long.class);
 
         return user_id;
     }
+
     public List<Car> getNewCarList(Integer top) {
         Type listType = new TypeToken<ArrayList<Car>>() {
         }.getType();
         ArrayList<Car> carList = new Gson().fromJson(
                 client
-                        .target(URL + "car/list_index_new?top="+top.toString())
+                        .target(URL + "car/list_index_new?top=" + top.toString())
                         .request(MediaType.TEXT_PLAIN)
                         .accept(MediaType.APPLICATION_JSON)
                         .get(String.class)

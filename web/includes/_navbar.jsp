@@ -1,5 +1,5 @@
 <%@ page import="utils.Constants" %>
-<nav class="navbar navbar-ct-transparent navbar-relative " role="navigation-demo" id="register-navbar"
+<nav class="navbar navbar-ct-transparent navbar-relative" role="navigation-demo" id="register-navbar"
      style="color: white;">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -17,6 +17,9 @@
                 </li>
                 <li>
                     <a href="list_new.jsp" class="btn btn-simple" style="color: white;">New Cars</a>
+                </li>
+                <li>
+                    <a href="compare_cars.jsp" class="btn btn-simple" style="color: white;">Compare Cars</a>
                 </li>
             </ul>
         </div>

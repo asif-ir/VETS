@@ -69,8 +69,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="container" id="results">
-                    </div>
+                </div>
+                <div class="container" id="results">
                 </div>
             </div>
         </div>

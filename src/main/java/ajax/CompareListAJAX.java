@@ -35,13 +35,13 @@ public class CompareListAJAX extends HttpServlet {
 
         out.print("<table class=\"table table-stripped table-hover\"\n" +
                 "                               style=\"color: white; background-color: rgba(0,0,0,0.3)\">\n" +
-                "                            <tr>\n" +
-                "                                <th>Model Name :</th>\n" +
-                "                                <td><img src='assets/cars/"+ car1.getId() +".jpg' alt='" + car1.getId() + "class='img-thumbnail img-responsive'><br>" + "\n" +
-                "                                </td>\n" +
-                "                                <td><img src='assets/cars/"+ car2.getId() +".jpg' alt='" + car2.getId() + "class='img-thumbnail img-responsive'><br>" + "\n" +
-                "                                </td>\n" +
-                "                            </tr>\n" +
+//                "                            <tr>\n" +
+//                "                                <th>Model Name :</th>\n" +
+//                "                                <td><img src='assets/cars/"+ car1.getId() +".jpg' alt='" + car1.getId() + "class='img-thumbnail img-responsive'><br>" + "\n" +
+//                "                                </td>\n" +
+//                "                                <td><img src='assets/cars/"+ car2.getId() +".jpg' alt='" + car2.getId() + "class='img-thumbnail img-responsive'><br>" + "\n" +
+//                "                                </td>\n" +
+//                "                            </tr>\n" +
                 "\n" +
                 "                            <tr>\n" +
                 "                                <th>Model Name :</th>\n" +

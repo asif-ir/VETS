@@ -17,6 +17,9 @@
                 <li>
                     <a href="list_new.jsp" class="btn btn-simple">New Cars</a>
                 </li>
+                <li>
+                    <a href="compare_cars.jsp" class="btn btn-simple">Compare Cars</a>
+                </li>
             </ul>
         </div>
 

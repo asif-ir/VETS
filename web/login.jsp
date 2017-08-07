@@ -36,10 +36,10 @@
 
                         <form class="register-form" method="post" action="login">
                             <label>Username</label>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
 
                             <label>Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
 
                             <input type="submit" class="btn btn-danger btn-block" value="Login">
                         </form>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="footer register-footer text-center">
-            <h6>&copy; 2015, made with <i class="fa fa-heart heart">
+            <h6>&copy; 2015, made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>
