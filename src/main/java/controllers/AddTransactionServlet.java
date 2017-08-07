@@ -71,7 +71,7 @@ public class AddTransactionServlet extends HttpServlet {
         Status status2 = new CarModel().deleteCar(car_sell_id);
         System.out.println("status car_sell:" + status1);
         System.out.println("status buy_sell:" + status2);
-        req.setAttribute("message", "Transaction Successfull");
+        req.setAttribute("message", "Transaction Successful");
 
         SendSMS.sendSms("Order placed successfully", buyer.getPhone());
         SendSMS.sendSms("Your car " + car_buy.getModel_name() + "," + "car ID =" + car_buy.getId() +
@@ -84,6 +84,9 @@ public class AddTransactionServlet extends HttpServlet {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        String order_msg = (transaction.getPrice()>=0 ? "You have to pay: ":"You will recieve: " ) +
+                Math.abs(transaction.getPrice()) +" INR";
+        req.setAttribute("order_msg",order_msg);
+        req.getRequestDispatcher("profile.jsp").forward(req, resp);
     }
 }
