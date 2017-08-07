@@ -40,8 +40,8 @@ public class AddTransactionServlet extends HttpServlet {
         transaction.setvehicle_id(Integer.parseInt(req.getParameter("car_buy_id")));
         transaction.setTransaction_date(new Date());
 
-        Car car_buy=new CarModel().getCar(car_buy_id);
-        Car car_sell=new CarModel().getCar(car_sell_id);
+        Car car_buy = new CarModel().getCar(car_buy_id);
+        Car car_sell = new CarModel().getCar(car_sell_id);
         transaction.setPrice(car_buy.getPrice() - car_sell.getPrice());
         /*try {
             DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
@@ -55,26 +55,26 @@ public class AddTransactionServlet extends HttpServlet {
         String host = "smtp.gmail.com";
         String from = "rtsskmit@gmail.com";
         String pass = "rtssmini";
-        String emailTo[] = {seller.getEmail(),buyer.getEmail()};
-        if(status.getCode()!=0){
+        String emailTo[] = {seller.getEmail(), buyer.getEmail()};
+        if (status.getCode() != 0) {
             req.setAttribute("message", "Transaction Failed");
+            req.getRequestDispatcher("profile.jsp").forward(req, resp);
             return;
         }
 
-            req.setAttribute("message", "Transaction Successfull");
-            SendSMS.sendSms("Order placed successfully",buyer.getPhone());
-            SendSMS.sendSms("Your car "+car_buy.getModel_name()+","+"car ID ="+car_buy.getId()+
-                    " has been ordered",seller.getPhone());
-            String sub="Order Placed on Trade and Exchange",
-                msg = "Order placed for trading/exchanging between car ID:"+car_buy.getId()+",model name: "+car_buy.getModel_name()
-                    + "and car ID: "+car_sell.getId()+",model name: "+car_sell.getModel_name();
-            try {
-                SendEmail.sendEmail(host,from,pass,emailTo,sub,msg);
-            } catch (MessagingException e) {
-                e.printStackTrace();
-            }
+        req.setAttribute("message", "Transaction Successfull");
 
-
+        SendSMS.sendSms("Order placed successfully", buyer.getPhone());
+        SendSMS.sendSms("Your car " + car_buy.getModel_name() + "," + "car ID =" + car_buy.getId() +
+                " has been ordered", seller.getPhone());
+        String sub = "Order Placed on Trade and Exchange",
+                msg = "Order placed for trading/exchanging between car ID:" + car_buy.getId() + ",model name: " + car_buy.getModel_name()
+                        + "and car ID: " + car_sell.getId() + ",model name: " + car_sell.getModel_name();
+        try {
+            SendEmail.sendEmail(host, from, pass, emailTo, sub, msg);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }
