@@ -56,8 +56,11 @@ public class AddTransactionServlet extends HttpServlet {
         String from = "rtsskmit@gmail.com";
         String pass = "rtssmini";
         String emailTo[] = {seller.getEmail(),buyer.getEmail()};
+        if(status.getCode()!=0){
+            req.setAttribute("message", "Transaction Failed");
+            return;
+        }
 
-        if (status.getCode() == 1) {
             req.setAttribute("message", "Transaction Successfull");
             SendSMS.sendSms("Order placed successfully",buyer.getPhone());
             SendSMS.sendSms("Your car "+car_buy.getModel_name()+","+"car ID ="+car_buy.getId()+
@@ -70,9 +73,7 @@ public class AddTransactionServlet extends HttpServlet {
             } catch (MessagingException e) {
                 e.printStackTrace();
             }
-        } else {
-            req.setAttribute("message", "Transaction Failed");
-        }
+
 
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
