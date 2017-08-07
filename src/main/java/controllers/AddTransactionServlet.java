@@ -20,6 +20,7 @@ import models.CarModel;
 import models.TransactionModel;
 import entities.Status;
 import models.UserModel;
+import utils.PDFUtil;
 import utils.SendEmail;
 import utils.SendSMS;
 
@@ -32,11 +33,11 @@ public class AddTransactionServlet extends HttpServlet {
         Long car_sell_id = Long.parseLong(req.getParameter("car_sell_id"));
         Long buyer_id = (new CarModel()).getUserIdByCarId(car_sell_id);
         Long seller_id = (new CarModel()).getUserIdByCarId(car_buy_id);
-        System.out.println(buyer_id+":"+seller_id);
+        System.out.println(buyer_id + ":" + seller_id);
 
         User buyer = new UserModel().getUser(buyer_id);
         User seller = new UserModel().getUser(seller_id);
-        System.out.println(buyer.getEmail()+seller.getEmail());
+        System.out.println(buyer.getEmail() + seller.getEmail());
         transaction.setBuyer_id(seller_id);
         transaction.setSeller_id(buyer_id);
         int c_id = Integer.parseInt(req.getParameter("car_buy_id"));
@@ -46,7 +47,7 @@ public class AddTransactionServlet extends HttpServlet {
 
         Car car_buy = new CarModel().getCar(car_buy_id);
         Car car_sell = new CarModel().getCar(car_sell_id);
-        System.out.println(car_buy.getBrand_name()+car_sell.getBrand_name());
+        System.out.println(car_buy.getBrand_name() + car_sell.getBrand_name());
         transaction.setPrice(car_buy.getPrice() - car_sell.getPrice());
         System.out.println(transaction.getPrice());
         /*try {
@@ -85,7 +86,12 @@ public class AddTransactionServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-
+        new PDFUtil().create(
+                buyer.getFirst_name() + " " + buyer.getLast_name(),
+                "Trade for " + car_buy.getBrand_name() + " - " + car_buy.getModel_name() + " for " +
+                        car_sell.getBrand_name() + " - " + car_sell.getModel_name(),
+                Math.abs(transaction.getPrice())
+        );
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }
