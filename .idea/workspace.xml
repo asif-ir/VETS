@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9821f9b-9471-4948-9dd6-bcaaca80c24b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/entities/Car.class" afterPath="$PROJECT_DIR$/target/classes/entities/Car.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/models/UserModel.class" afterPath="$PROJECT_DIR$/target/classes/models/UserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/models/CarModel.class" afterPath="$PROJECT_DIR$/target/classes/models/CarModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Car.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/CarModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/CarModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/add_car.jsp" afterPath="$PROJECT_DIR$/web/add_car.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,16 +31,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
-              <folding />
+              <folding>
+                <marker date="1502108329938" expanded="true" signature="9576:9685" ph="..." />
+                <marker date="1502108329938" expanded="false" signature="9594:9600" ph="©" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCarServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddCarServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+            <state relative-caret-position="131">
+              <caret line="78" column="53" lean-forward="false" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -81,18 +77,20 @@
       <file leaf-file-name="AddTransactionServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="442">
+              <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+              <folding>
+                <marker date="1502108248275" expanded="true" signature="1747:2178" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CarModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/CarModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="301">
+              <caret line="124" column="43" lean-forward="true" selection-start-line="124" selection-start-column="43" selection-end-line="124" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -433,29 +431,18 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/VETS.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/LoginServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/Car.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/ajax/CompareListAJAX.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/CarModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/UserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/utils/Constants.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/entities/Car.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/CarModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/models/UserModel.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/add_car.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/paper_img/examples/register.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/paper_img/landscape.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/bootstrap3/css/bootstrap.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_login_register_navbar.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/paper_img/city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/compare_cars.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_message.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/includes/_navbar.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/list_new.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/list_used.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/login.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/profile.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/register.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/view_car.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -464,9 +451,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/css/carousel.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/js/carousel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/paper_img/landscape_old.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/ajax/SearchAJAX.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/cars/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/search.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -474,7 +461,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/test.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/assets/cars/3.jpeg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1326,7 +1313,7 @@
       <option name="presentableId" value="Default" />
       <updated>1501928499015</updated>
       <workItem from="1501928502970" duration="9483000" />
-      <workItem from="1501958800212" duration="35610000" />
+      <workItem from="1501958800212" duration="36180000" />
     </task>
     <task id="LOCAL-00001" summary="Get By USername">
       <created>1501940262931</created>
@@ -1370,14 +1357,22 @@
       <option name="project" value="LOCAL" />
       <updated>1502049672945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add car successfull!!!">
+      <created>1502108209494</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1502108209494</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45185000" />
+    <option name="totallyTimeSpent" value="45755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1598" height="858" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1399,8 +1394,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32231405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32506886" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32231405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21521457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1430,10 +1425,20 @@
     <MESSAGE value="Get By USername" />
     <MESSAGE value="HARI OM COMMIT !!!!" />
     <MESSAGE value="View_car.jsp page" />
-    <option name="LAST_COMMIT_MESSAGE" value="View_car.jsp page" />
+    <MESSAGE value="Add car successfull!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add car successfull!!!" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/models/CarModel.java</url>
+          <line>114</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1582,16 +1587,16 @@
         <state relative-caret-position="187">
           <caret line="11" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
           <folding>
-            <marker date="1502040947607" expanded="true" signature="1839:1866" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="1839:1889" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="1839:1908" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3030:3086" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3030:3097" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3030:3104" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3030:3156" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3030:3712" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="1938:1975" ph="..." />
-            <marker date="1502040947607" expanded="true" signature="3053:3071" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="1839:1866" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="1839:1889" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="1839:1908" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3029:3085" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3029:3096" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3029:3103" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3029:3155" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3029:3711" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="1938:1975" ph="..." />
+            <marker date="1502108248558" expanded="true" signature="3052:3070" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1601,38 +1606,38 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1502108175223" expanded="true" signature="102382:102407" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102382:102429" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102382:102463" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102382:102483" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102382:102498" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102382:104284" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102026:102040" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102548:102854" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102567:102839" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102641:102819" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102681:102785" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102702:102763" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102905:103170" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102924:103155" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102957:103135" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="102997:103101" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103018:103079" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103213:103519" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103232:103504" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103306:103484" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103346:103450" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103367:103428" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103570:103877" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103589:103862" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103664:103842" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103704:103808" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103725:103786" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103929:104270" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="103948:104255" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="104057:104235" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="104097:104201" ph="..." />
-            <marker date="1502108175223" expanded="true" signature="104118:104179" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:102407" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:102429" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:102463" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:102483" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:102498" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102382:104284" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="100300:100314" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102548:102854" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102567:102839" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102641:102819" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102681:102785" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102702:102763" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102905:103170" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102924:103155" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102957:103135" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="102997:103101" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103018:103079" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103213:103519" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103232:103504" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103306:103484" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103346:103450" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103367:103428" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103570:103877" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103589:103862" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103664:103842" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103704:103808" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103725:103786" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103929:104270" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="103948:104255" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="104057:104235" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="104097:104201" ph="..." />
+            <marker date="1502108686572" expanded="true" signature="104118:104179" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1750,11 +1755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="143" column="18" lean-forward="false" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1762,12 +1763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1797,9 +1793,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <marker date="1502108248275" expanded="true" signature="1747:2178" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1854,22 +1852,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+          <folding>
+            <marker date="1502108329938" expanded="true" signature="9576:9685" ph="..." />
+            <marker date="1502108329938" expanded="false" signature="9594:9600" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="78" column="53" lean-forward="false" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/CarModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AddCarServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+        <state relative-caret-position="301">
+          <caret line="124" column="43" lean-forward="true" selection-start-line="124" selection-start-column="43" selection-end-line="124" selection-end-column="43" />
           <folding />
         </state>
       </provider>
