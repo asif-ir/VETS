@@ -1,3 +1,6 @@
+<%@ page import="models.UserModel" %>
+<%@ page import="entities.Car" %>
+<%@ page import="models.CarModel" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,23 +33,50 @@
         <div class="filter-black"></div>
         <div class="container">
             <div class="row">
-                <h2>Compare Cars</h2>
+                <h2 style="color: #00bbff; text-align: left;">Compare Cars</h2>
                 <hr>
 
                 <div class="container-fluid">
-r                    <div class="col-md-6">
-                        <input type="text" name="cmp_car_t1" id="cmp_car_t1">
-                        <button class="btn btn-simple" on><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="container">
+                        <div class="col-md-3">
+                            <select class="form-control" name="cmp_car_t1" id="cmp_car_t1">
+                                <%
+                                    for (Car c : new CarModel().getCarList()) {
+                                %>
+                                <option value="<%=c.getId()%>"><%=c.getBrand_name()%> - <%=c.getModel_name()%>
+                                </option>
+                                <%
+                                    }
+                                %>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <select class="form-control" name="cmp_car_t2" id="cmp_car_t2">
+                                <%
+                                    for (Car c : new CarModel().getCarList()) {
+                                %>
+                                <option value="<%=c.getId()%>"><%=c.getBrand_name()%> - <%=c.getModel_name()%>
+                                </option>
+                                <%
+                                    }
+                                %>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2">
+                            <button class="btn btn-info btn-fill btn-block" on id="compare_btn"><i class="fa fa-search"
+                                                                                                   aria-hidden="true"></i>
+                                Compare
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" name="cmp_car_t2" id="cmp_car_t2">
-                        <button class="btn btn-simple"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="container" id="results">
                     </div>
                 </div>
             </div>
         </div>
+        <br><br><br><br>
         <div class="footer register-footer text-center">
-            <h6>&copy; 2017, made with <i class="fa fa-heart heart"></i></h6>
+            <h6>&copy; 2017, All rights reserved.</h6>
         </div>
     </div>
 </div>
@@ -65,7 +95,19 @@ r                    <div class="col-md-6">
 
 <script src="../assets/js/ct-paper.js"></script>
 <script>
+    $("#compare_btn").click(function (event) {
+        console.log($("#cmp_car_t1 option:selected").text());
+        console.log($("#cmp_car_t2 option:selected").text());
 
+        $.post("/compare-list",
+            {
+                car1: $("#cmp_car_t1 option:selected").val(),
+                car2: $("#cmp_car_t2 option:selected").val()
+            },
+            function (data, status, xhr) {
+                $("#results").html(data);
+            });
+    });
 </script>
 
 </html>

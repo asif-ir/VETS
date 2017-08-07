@@ -33,8 +33,6 @@ public class CarModel {
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
 
-        System.out.println(car.getBrand_name());
-
         return car;
     }
 
@@ -122,6 +120,7 @@ public class CarModel {
     }
 
     public Status addCar(Car car) {
+        System.out.println("Path : "+URL+"car/create");
         Status status = client
                 .target(URL + "car/create")
                 .request(MediaType.APPLICATION_JSON)

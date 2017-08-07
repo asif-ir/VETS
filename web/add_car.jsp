@@ -157,7 +157,11 @@
                             <input type="number" class="form-control" name="seating_capacity" id="seating_capacity"
                                    placeholder="Seating Capacity" required>
 
-                            <input type="submit" class="btn btn-danger btn-block" value="Add Car">
+                            <label>Price</label>
+                            <input type="number" class="form-control" name="price" id="price" placeholder="Enter Price"
+                                   required>
+
+                            <button class="btn btn-danger btn-block">Register</button>
                         </form>
                     </div>
                 </div>
