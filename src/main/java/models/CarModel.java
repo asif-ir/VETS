@@ -6,6 +6,8 @@ import com.sun.jersey.api.client.GenericType;
 import com.sun.jersey.api.client.WebResource;
 import entities.Car;
 import entities.Status;
+import entities.User;
+import utils.Constants;
 import utils.GsonMessageBodyHandler;
 
 import com.sun.jersey.api.client.Client;
@@ -22,7 +24,7 @@ import java.util.List;
  */
 public class CarModel {
     private javax.ws.rs.client.Client client = ClientBuilder.newClient().register(GsonMessageBodyHandler.class);
-    private String URL = "http://localhost:8080/";
+    private String URL = Constants.URL;
 
     public Car getCar(long id) {
         Car car = client
@@ -31,9 +33,22 @@ public class CarModel {
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
 
-        System.out.println(car.getBrand_name());
-
         return car;
+    }
+
+    public List<Car> searchCarByKeyword(String keyword) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/search/" + keyword)
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
     }
 
     public List<Car> getCarList() {
@@ -58,6 +73,44 @@ public class CarModel {
                 client
                         .target(URL + "car/list-"+type.toLowerCase())
                         .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
+    }
+
+    public List<Car> getUsedCarList(Integer top) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list_index_used?top="+top.toString())
+                        .request(MediaType.TEXT_PLAIN)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
+    }
+
+    public Long getUserIdByCarId(long car_id) {
+        Long user_id = client
+                .target(URL +"car/getUserId?car_id=" + car_id)
+                .request(MediaType.APPLICATION_JSON)
+                .get(Long.class);
+
+        return user_id;
+    }
+    public List<Car> getNewCarList(Integer top) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/list_index_new?top="+top.toString())
+                        .request(MediaType.TEXT_PLAIN)
                         .accept(MediaType.APPLICATION_JSON)
                         .get(String.class)
                 ,

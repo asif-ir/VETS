@@ -11,12 +11,12 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<%=Constants.ROOT_URL%>">Trade & Exchange</a>
-            <ul class="nav navbar-nav navbar-left">
+            <ul class="nav navbar-nav navbar-left" style="color: white;">
                 <li>
-                    <a href="list_used.jsp" class="btn btn-simple">Used Cars</a>
+                    <a href="list_used.jsp" class="btn btn-simple" style="color: white;">Used Cars</a>
                 </li>
                 <li>
-                    <a href="list_new.jsp" class="btn btn-simple">New Cars</a>
+                    <a href="list_new.jsp" class="btn btn-simple" style="color: white;">New Cars</a>
                 </li>
             </ul>
         </div>
@@ -28,19 +28,19 @@
                     if (session.getAttribute("username") != null) {
                 %>
                 <li>
-                    <a href="add_car.jsp" class="btn btn-simple">Add Car</a>
+                    <a href="add_car.jsp" class="btn btn-simple" style="color: white;">Add Car</a>
                 </li>
                 <li>
-                    <a href="logout" class="btn btn-simple">Logout</a>
+                    <a href="logout" class="btn btn-simple" style="color: white;">Logout</a>
                 </li>
                 <%
                 } else {
                 %>
                 <li>
-                    <a href="register.jsp" class="btn btn-simple">Register</a>
+                    <a href="register.jsp" class="btn btn-simple" style="color: white;">Register</a>
                 </li>
                 <li>
-                    <a href="login.jsp" class="btn btn-simple">Login</a>
+                    <a href="login.jsp" class="btn btn-simple" style="color: white;">Login</a>
                 </li>
                 <%
                     }

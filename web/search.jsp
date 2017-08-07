@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="../assets/paper_img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>Used Cars | Trade & Exchange</title>
+    <title>Search | Trade & Exchange</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
@@ -33,44 +33,14 @@
     <div class="register-background">
         <div class="filter-black"></div>
         <div class="container">
-            <div>
-                <h2 style="color: #00bbff">New Cars</h2>
-                <hr>
-                <%
-                    List<Car> cars = new CarModel().getCarList("new");
-
-                %>
-                <%
-                    for(Car car:cars){
-                %>
-                <a href="view_car.jsp?id=<%=car.getId()%>">
-                    <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
-                        <div class="col-md-4 col-sm-3 col-md-2">
-                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4><br>
-                            <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>" class="img-thumbnail img-responsive">
-                        </div>
-                        <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
-                            <br><br>
-                            <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%></button>
-                            <br><br>
-                            <p class=""><em><strong>Manufacturing Year: </strong></em><%=car.getManufacturing_year()%></p>
-                            <br>
-                            <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%></p>
-                            <br>
-                            <p class=""><em><strong>Odometer Reading: </strong></em><%=car.getOdo_reading()%> kms</p>
-                        </div>
-                    </div>
-                </a>
-                <br>
-                <%
-
-                    }
-                %>
+            <div class="form-group">
+                <input type="text" placeholder="Search" name="keyword" id="keyword" class="form-control"/>
+            </div>
+            <br><br>
+            <%--TODO: Implement using AJAX--%>
+            <div id="results">
 
             </div>
-        </div>
-        <div class="footer register-footer text-center">
-            <h6>Made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>
@@ -89,5 +59,18 @@
 <script src="../assets/js/bootstrap-datepicker.js"></script>
 
 <script src="../assets/js/ct-paper.js"></script>
+
+<script>
+    $("#keyword").keyup(function (event) {
+        $("#results").html("");
+        $.post("/search",
+            {
+                keyword: $("#keyword").val()
+            },
+            function (data, status, xhr) {
+                $("#results").html(data);
+            });
+    });
+</script>
 
 </html>
