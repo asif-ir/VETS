@@ -55,7 +55,7 @@
 </div>
 <br><br><br>
 <div class="container" style="background-color: rgba(0,0,0,0.3);">
-    <h3 style="color: #00bbff;">Recent Used Cars Updated.</h3>
+    <h3 style="color: white;">Recent Used Cars Updated.</h3>
     <hr>
     <div class="row">
         <div class="col-md-12">
@@ -99,7 +99,7 @@
 </div>
 <br><br><br>
 <div class="container" style="background-color: rgba(0,0,0,0.3);">
-    <h3 style="color: #00bbff;">Recent New Car Arrivals</h3>
+    <h3 style="color: white;">Recent New Car Arrivals</h3>
     <hr>
     <div class="row">
         <div class="col-md-12">
