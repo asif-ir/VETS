@@ -55,11 +55,11 @@
                 <%
                     if (session.getAttribute("username") != null) {
                 %>
-                <form class="register-form" method="post" action="add-car">
+                <form class="register-form" method="post" action="add-transaction" style="z-index: 999;">
                     <input type="hidden" name="car_buy_id" value="<%=request.getParameter("id")%>">
 
                     <label>Select Car to Trade: </label>
-                    <select class="form-control" name="car_buy_id" id="car_buy_id"  required>
+                    <select class="form-control" name="car_sell_id" id="car_sell_id" style="z-index: 999;" required>
                         <%
                             for (Car c : new UserModel().getMyUnsoldCars(session.getAttribute("username").toString())) {
                         %>
@@ -70,7 +70,21 @@
                         %>
                     </select>
                     <br><br>
-                    <input type="submit" class="btn btn-fill btn-success btn-block" value="Trade">
+                    <input type="submit" class="btn btn-fill btn-success btn-block" value="Trade" style="">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="XFZX2RLX7RDDA">
+                        <table>
+                            <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
+                            <option value="Deluxe Plan">Deluxe Plan : $3.00 USD - yearly</option>
+                            <option value="Enterprise Plan">Enterprise Plan : $25.00 USD - yearly</option>
+                        </select> </td></tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
                 </form>
                 <%
                 } else {

@@ -1,5 +1,7 @@
 package models;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import entities.*;
 import utils.Constants;
 import utils.GsonMessageBodyHandler;
@@ -8,7 +10,11 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
+
+import static utils.Constants.URL_TRANS_CREATE;
 
 /**
  * Created by rawlooa on 8/4/2017.
@@ -18,13 +24,25 @@ public class TransactionModel {
     private String URL_TRANSACTION = Constants.URL + Constants.URL_TRANSACTION;
 
     public Status addTransaction(Transaction transaction) {
-
-        Status status = client
-                .target(URL_TRANSACTION + Constants.URL_TRANS_CREATE)
+        System.out.println("TRansssssssss : "+URL_TRANSACTION+URL_TRANS_CREATE);
+        /*Status status = client
+                .target(URL_TRANSACTION + URL_TRANS_CREATE)
                 .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.TEXT_PLAIN)
-                .post(Entity.json(transaction), Status.class);
-
+                .accept(MediaType.APPLICATION_JSON)
+                .post(Entity.json(transaction), Status.class);*/
+        Type type = new TypeToken<Status>() {
+        }.getType();
+        Status status = new Gson().fromJson(
+                client
+                        .target(URL_TRANSACTION+URL_TRANS_CREATE)
+                        .request(MediaType.TEXT_PLAIN)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .post(Entity.json(transaction),String.class)
+                ,
+                type);
+       /* Status status = client.target(URL_TRANSACTION + URL_TRANS_CREATE)
+                .request(MediaType.APPLICATION_JSON)
+                .post(Entity.json(transaction), Status.class);*/
         return status;
     }
 

@@ -32,31 +32,37 @@ public class AddTransactionServlet extends HttpServlet {
         Long car_sell_id = Long.parseLong(req.getParameter("car_sell_id"));
         Long buyer_id = (new CarModel()).getUserIdByCarId(car_sell_id);
         Long seller_id = (new CarModel()).getUserIdByCarId(car_buy_id);
+        System.out.println(buyer_id+":"+seller_id);
+
         User buyer = new UserModel().getUser(buyer_id);
         User seller = new UserModel().getUser(seller_id);
-
+        System.out.println(buyer.getEmail()+seller.getEmail());
         transaction.setBuyer_id(seller_id);
         transaction.setSeller_id(buyer_id);
-        transaction.setvehicle_id(Integer.parseInt(req.getParameter("car_buy_id")));
-        transaction.setTransaction_date(new Date());
+        int c_id = Integer.parseInt(req.getParameter("car_buy_id"));
+        System.out.println(c_id);
+        transaction.setvehicle_id(c_id);
+        //transaction.setTransaction_date(new Date());
 
         Car car_buy = new CarModel().getCar(car_buy_id);
         Car car_sell = new CarModel().getCar(car_sell_id);
+        System.out.println(car_buy.getBrand_name()+car_sell.getBrand_name());
         transaction.setPrice(car_buy.getPrice() - car_sell.getPrice());
+        System.out.println(transaction.getPrice());
         /*try {
             DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
             transaction.setTransaction_date(df.parse(req.getParameter("transaction_date")));
         } catch (Exception e) {
             e.printStackTrace();
         }*/
-        transaction.setvehicle_id(Integer.parseInt(req.getParameter("vehicle_id")));
-
+        System.out.println("going to add Transaction");
         Status status = new TransactionModel().addTransaction(transaction);
+        System.out.println("add-transaction called!");
         String host = "smtp.gmail.com";
         String from = "rtsskmit@gmail.com";
         String pass = "rtssmini";
         String emailTo[] = {seller.getEmail(), buyer.getEmail()};
-        if (status.getCode() != 0) {
+        if (status.getCode() != 1) {
             req.setAttribute("message", "Transaction Failed");
             req.getRequestDispatcher("profile.jsp").forward(req, resp);
             return;

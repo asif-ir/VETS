@@ -24,7 +24,7 @@ public class UserModel {
 
     public User getUser(long id) {
         User user = client
-                .target(URL_USER + Constants.URL_USERNAME + id)
+                .target(URL_USER + id)
                 .request(MediaType.APPLICATION_JSON)
                 .get(User.class);
 

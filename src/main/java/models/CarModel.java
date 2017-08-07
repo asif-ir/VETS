@@ -132,7 +132,7 @@ public class CarModel {
 
     public Status deleteCar(long id) {
         Status status = client
-                .target(URL + "car/delete" + id)
+                .target(URL + "car/delete/" + id)
                 .request(MediaType.TEXT_PLAIN)
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Status.class);
