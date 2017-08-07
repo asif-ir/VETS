@@ -10,6 +10,7 @@
 <%@ page import="models.CarModel" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
+<%@ page import="models.UserModel" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -43,14 +44,42 @@
         <div class="container text-center">
 
             <div class="row" style="color: #00bbff; text-align: left;">
-                <h4><%=car.getBrand_name()%> - <em><%=car.getModel_name()%>
+                <h4>&nbsp;<%=car.getBrand_name()%> - <em><%=car.getModel_name()%>
                 </em></h4>
             </div>
             <hr>
 
             <div class="col-md-4">
                 <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>"
-                     class="img-thumbnail img-responsive">
+                     class="img-thumbnail img-responsive"><br>
+                <%
+                    if (session.getAttribute("username") != null) {
+                %>
+                <form class="register-form" method="post" action="add-car">
+                    <input type="hidden" name="car_buy_id" value="<%=request.getParameter("id")%>">
+
+                    <label>Select Car to Trade: </label>
+                    <select class="form-control" name="car_buy_id" id="car_buy_id"  required>
+                        <%
+                            for (Car c : new UserModel().getMyUnsoldCars(session.getAttribute("username").toString())) {
+                        %>
+                        <option value="<%=c.getId()%>"><%=c.getBrand_name()%> - <%=c.getModel_name()%>
+                        </option>
+                        <%
+                            }
+                        %>
+                    </select>
+                    <br><br>
+                    <input type="submit" class="btn btn-fill btn-success btn-block" value="Trade">
+                </form>
+                <%
+                } else {
+
+                %>
+                <a href="login.jsp" style="color: #f07d72;">You need to login to trade!</a>
+                <%
+                    }
+                %>
             </div>
 
             <div class="col-md-7 col-md-offset-1">
@@ -129,7 +158,7 @@
                     </tr>
                 </table>
             </div>
-            <br>
+            <br><br><br>
 
             <div class="container">
                 <div id="disqus_thread"></div>
@@ -148,8 +177,6 @@
         </div>
     </div>
 </div>
-
-<%@ include file="includes/_footer.jsp" %>
 
 </body>
 

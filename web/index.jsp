@@ -24,7 +24,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/carousel.css">
 </head>
-<body>
+<body style="background-image: url('assets/paper_img/landscape.jpg')">
 
 <div class="wrapper">
     <%@ include file="includes/_navbar.jsp" %>
@@ -35,12 +35,12 @@
             <div style="width: 40%; margin-left: 30%;">
                 <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
                     <li class="active">
-                        <a href="#description" role="tab" data-toggle="tab">
+                        <a href="list_used.jsp" role="tab" data-toggle="tab">
                             List used cars
                         </a>
                     </li>
                     <li class="active">
-                        <a href="#concept" role="tab" data-toggle="tab">
+                        <a href="list_new.jsp" role="tab" data-toggle="tab">
                             List new cars
                         </a>
                     </li>
@@ -50,8 +50,10 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <h3>Recent Used Cars Updated.</h3>
+<br><br><br>
+<div class="container" style="background-color: rgba(0,0,0,0.3);">
+    <h3 style="color: #00bbff;">Recent Used Cars Updated.</h3>
+    <hr>
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
@@ -92,9 +94,10 @@
         </div>
     </div>
 </div>
-
-<div class="container">
-    <h3>Recent New Car Arrivals</h3>
+<br><br><br>
+<div class="container" style="background-color: rgba(0,0,0,0.3);">
+    <h3 style="color: #00bbff;">Recent New Car Arrivals</h3>
+    <hr>
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarouselNew">
@@ -133,9 +136,6 @@
                         class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
         </div>
-    </div>
-    <div>
-        <%@include file="includes/_footer.jsp" %>
     </div>
 </div>
 </body>

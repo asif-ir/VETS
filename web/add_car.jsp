@@ -157,7 +157,7 @@
                             <input type="number" class="form-control" name="seating_capacity" id="seating_capacity"
                                    placeholder="Seating Capacity" required>
 
-                            <button class="btn btn-danger btn-block">Register</button>
+                            <input type="submit" class="btn btn-danger btn-block" value="Add Car">
                         </form>
                     </div>
                 </div>
