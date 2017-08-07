@@ -37,7 +37,7 @@
                         <br>
                         <%@include file="includes/_message.jsp" %>
 
-                        <form class="register-form" method="post" action="add-car">
+                        <form class="register-form" method="post" action="add-car" >
                             <label>Model Name</label>
                             <input type="text" class="form-control" name="model_name" id="model_name"
                                    placeholder="Model Name">
@@ -160,6 +160,9 @@
                             <label>Price</label>
                             <input type="number" class="form-control" name="price" id="price" placeholder="Enter Price"
                                    required>
+
+                            <%--<label>Upload Image</label>--%>
+                            <%--<input type="file" name="file" value="Upload Images" accept="image/*">--%>
 
                             <button class="btn btn-danger btn-block">Register</button>
                         </form>
