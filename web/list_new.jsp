@@ -89,23 +89,5 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 
 <script src="assets/js/ct-paper.js"></script>
-<script src="assets/js/paginathing.js"></script>
-<script>
-    $('#list').paginathing({
-        perPage: 5,
-        limitPagination: true,
-        prevNext: true,
-        firstLast: true,
-        prevText: '&laquo;',
-        nextText: '&raquo;',
-        firstText: 'First',
-        lastText: 'Last',
-        containerClass: 'pagination-container',
-        ulClass: 'pagination',
-        liClass: 'page',
-        activeClass: 'active',
-        disabledClass: 'disabled'
-    })
-</script>
 
 </html>
