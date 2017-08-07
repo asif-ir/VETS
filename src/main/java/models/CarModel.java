@@ -33,8 +33,6 @@ public class CarModel {
                 .accept(MediaType.APPLICATION_JSON)
                 .get(Car.class);
 
-        System.out.println(car.getBrand_name());
-
         return car;
     }
 
