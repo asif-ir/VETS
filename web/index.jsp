@@ -43,7 +43,7 @@
                             List new cars
                         </a>
                     <li class="active">
-                        <a href="list_new.jsp" role="tab" data-toggle="tab">
+                        <a href="search.jsp" role="tab" data-toggle="tab">
                             Search
                         </a>
                     </li>
