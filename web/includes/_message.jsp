@@ -1,9 +1,9 @@
 <%
     if (request.getAttribute("message")!=null) {
 %>
-<div class="alert alert-success">
+<div class="alert alert-info">
     <div class="container">
-        <%= request.getAttribute("message").toString() %>
+        <p><%= request.getAttribute("message").toString() %></p>
     </div>
 </div>
 <%

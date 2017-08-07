@@ -52,7 +52,6 @@
                     <%!
                         List<Car> cars = new CarModel().getCarList("asif");
                     %>
-
                     <%
 
                         for (Car car: cars) {
