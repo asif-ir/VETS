@@ -31,6 +31,15 @@ public class UserModel {
         return user;
     }
 
+    public Long getUserId(String username) {
+        Long id = client
+                .target(URL_USER +"/get-user-id/"+username)
+                .request(MediaType.APPLICATION_JSON)
+                .get(Long.class);
+
+        return id;
+    }
+
     public List<User> getUsers() {
         List<User> userList = client
                 .target(URL_USER + Constants.URL_USER_LIST)

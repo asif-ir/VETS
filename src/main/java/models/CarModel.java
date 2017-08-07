@@ -67,6 +67,7 @@ public class CarModel {
     }
 
     public Status addCar(Car car) {
+        System.out.println("Path : "+URL+"car/create");
         Status status = client
                 .target(URL + "car/create")
                 .request(MediaType.APPLICATION_JSON)

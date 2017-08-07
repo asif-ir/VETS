@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by rawlooa on 8/4/2017.
  */
 public class Car {
-    private int id;
+    private long id;
     private String model_name;
     private String brand_name;
     private String engine;
@@ -46,19 +46,10 @@ public class Car {
         this.manufacturing_year = manufacturing_year;
         this.registration_type = registration_type;
         this.rto_location = rto_location;
-//        this.date_of_reg_on_website = date_of_reg_on_website;
         this.mileage = mileage;
         this.seating_capacity = seating_capacity;
         this.owned_by = owned_by;
         this.price = price;
-    }
-
-    public long getOwned_by() {
-        return owned_by;
-    }
-
-    public void setOwned_by(int owned_by) {
-        this.owned_by = owned_by;
     }
 
     public int getSeating_capacity() {
@@ -189,11 +180,11 @@ public class Car {
         this.city = city;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -217,9 +208,9 @@ public class Car {
         this.model_name = model_name;
     }
 
-    public void setOwned_by(long owned_by) {
-        this.owned_by = owned_by;
-    }
+//    public void setOwned_by(long owned_by) {
+//        this.owned_by = owned_by;
+//    }
 
     public double getPrice() {
         return price;
@@ -227,6 +218,14 @@ public class Car {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public long getOwned_by() {
+        return owned_by;
+    }
+
+    public void setOwned_by(long owned_by) {
+        this.owned_by = owned_by;
     }
 }
 
