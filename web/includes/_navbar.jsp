@@ -21,6 +21,18 @@
                 <li>
                     <a href="compare_cars.jsp" class="btn btn-simple" style="color: white;">Compare Cars</a>
                 </li>
+                <li class="dropdown open">
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
