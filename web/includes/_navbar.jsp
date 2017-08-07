@@ -21,18 +21,7 @@
                 <li>
                     <a href="compare_cars.jsp" class="btn btn-simple" style="color: white;">Compare Cars</a>
                 </li>
-                <li class="dropdown open">
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
+
             </ul>
         </div>
 
@@ -42,20 +31,25 @@
                 <%
                     if (session.getAttribute("username") != null) {
                 %>
-                <li>
-                    <a href="add_car.jsp" class="btn btn-simple" style="color: white;">Add Car</a>
-                </li>
-                <li>
-                    <a href="logout" class="btn btn-simple" style="color: white;">Logout</a>
+                <li class="dropdown" style="color: white;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;"><i class="fa fa-user"></i>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.jsp" class="btn btn-simple">View My Cars</a></li>
+                        <li><a href="add_car.jsp" class="btn btn-simple" >Add Car</a></li>
+                        <li><a href="logout" class="btn btn-simple" >Logout</a></li>
+                    </ul>
                 </li>
                 <%
                 } else {
                 %>
-                <li>
-                    <a href="register.jsp" class="btn btn-simple" style="color: white;">Register</a>
-                </li>
-                <li>
-                    <a href="login.jsp" class="btn btn-simple" style="color: white;">Login</a>
+                <li class="dropdown" style="color: white;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">Login/Register
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.jsp" class="btn btn-simple">Login</a></li>
+                        <li><a href="register.jsp" class="btn btn-simple">Register</a></li>
+                    </ul>
                 </li>
                 <%
                     }

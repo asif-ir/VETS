@@ -84,6 +84,8 @@ public class AddTransactionServlet extends HttpServlet {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
+
+
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }
