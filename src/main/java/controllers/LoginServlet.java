@@ -18,10 +18,10 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
         System.out.println(username+":"+password);
         if (new UserModel().authLogin(username, password)) {
-            req.setAttribute("message", "Logged in Successfully");
-            req.getRequestDispatcher("index.jsp").forward(req, resp);
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
+            req.setAttribute("message", "Logged in Successfully");
+            req.getRequestDispatcher("index.jsp").forward(req, resp);
         } else {
             req.setAttribute("message", "Error in Login");
             req.getRequestDispatcher("login.jsp").forward(req, resp);
