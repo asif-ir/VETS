@@ -38,6 +38,21 @@ public class CarModel {
         return car;
     }
 
+    public List<Car> searchCarByKeyword(String keyword) {
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        ArrayList<Car> carList = new Gson().fromJson(
+                client
+                        .target(URL + "car/search/" + keyword)
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return carList;
+    }
+
     public List<Car> getCarList() {
         Type listType = new TypeToken<ArrayList<Car>>() {
         }.getType();

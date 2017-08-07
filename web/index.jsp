@@ -1,6 +1,5 @@
-<%@ page import="models.UserModel" %>
-<%@ page import="models.CarModel" %>
 <%@ page import="entities.Car" %>
+<%@ page import="models.CarModel" %>
 <%@ page import="java.util.List" %>
 <!doctype html>
 <html lang="en">
@@ -42,6 +41,10 @@
                     <li class="active">
                         <a href="list_new.jsp" role="tab" data-toggle="tab">
                             List new cars
+                        </a>
+                    <li class="active">
+                        <a href="list_new.jsp" role="tab" data-toggle="tab">
+                            Search
                         </a>
                     </li>
                 </ul>
