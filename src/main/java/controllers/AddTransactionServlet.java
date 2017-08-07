@@ -61,7 +61,10 @@ public class AddTransactionServlet extends HttpServlet {
             req.getRequestDispatcher("profile.jsp").forward(req, resp);
             return;
         }
-
+        Status status1 = new CarModel().deleteCar(car_buy_id);
+        Status status2 = new CarModel().deleteCar(car_sell_id);
+        System.out.println("status car_sell:" + status1);
+        System.out.println("status buy_sell:" + status2);
         req.setAttribute("message", "Transaction Successfull");
 
         SendSMS.sendSms("Order placed successfully", buyer.getPhone());
