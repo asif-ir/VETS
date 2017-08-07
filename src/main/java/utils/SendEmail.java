@@ -12,7 +12,7 @@ import javax.mail.internet.MimeMessage;
  * Created by vijayn on 8/5/2017.
  */
 public class SendEmail {
-    public static void sendEmail(String host, String from, String pass, String to[]) throws MessagingException {
+    public static void sendEmail(String host, String from, String pass, String to[],String sub,String msg) throws MessagingException {
 
         /*String host = "smtp.gmail.com";
         String from = "rtsskmit@gmail.com";
@@ -42,8 +42,8 @@ public class SendEmail {
         for (int i = 0; i < toAddress.length; i++) { // changed from a while loop
             message.addRecipient(Message.RecipientType.TO, toAddress[i]);
         }
-        message.setSubject("sending secert key");
-        message.setText("Message sent");
+        message.setSubject(sub);
+        message.setText(msg);
 
         Transport transport = session.getTransport("smtp");
         transport.connect(host, from, pass);

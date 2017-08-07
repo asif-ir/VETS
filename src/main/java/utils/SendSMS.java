@@ -8,17 +8,19 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 
 public class SendSMS {
+/*
     public static void main(String[] args) {
         System.out.println("Result is:" + (new SendSMS()).sendSms());
     }
+*/
 
-    public String sendSms() {
+    public static String sendSms(String msg,String mob_no) {
         try {
             // Construct data
             String apiKey = "apikey=" + URLEncoder.encode("A10QG2Yc57I-lqQysnBDlJUB2exaDkMHrjIp6HeEHW", "UTF-8");
-            String message = "&message=" + URLEncoder.encode("This is your message", "UTF-8");
+            String message = "&message=" + URLEncoder.encode(msg, "UTF-8");
             String sender = "&sender=" + URLEncoder.encode("TXTLCL", "UTF-8");
-            String numbers = "&numbers=" + URLEncoder.encode("918591871094", "UTF-8");
+            String numbers = "&numbers=" + URLEncoder.encode(mob_no, "UTF-8");
 
             // Send data
             String data = "https://api.textlocal.in/send/?" + apiKey + numbers + message + sender;
