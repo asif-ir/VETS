@@ -21,6 +21,7 @@
                 <li>
                     <a href="compare_cars.jsp" class="btn btn-simple" style="color: white;">Compare Cars</a>
                 </li>
+
             </ul>
         </div>
 
@@ -30,20 +31,25 @@
                 <%
                     if (session.getAttribute("username") != null) {
                 %>
-                <li>
-                    <a href="add_car.jsp" class="btn btn-simple" style="color: white;">Add Car</a>
-                </li>
-                <li>
-                    <a href="logout" class="btn btn-simple" style="color: white;">Logout</a>
+                <li class="dropdown" style="color: white;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;"><i class="fa fa-user"></i>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.jsp" class="btn btn-simple">View My Cars</a></li>
+                        <li><a href="add_car.jsp" class="btn btn-simple" >Add Car</a></li>
+                        <li><a href="logout" class="btn btn-simple" >Logout</a></li>
+                    </ul>
                 </li>
                 <%
                 } else {
                 %>
-                <li>
-                    <a href="register.jsp" class="btn btn-simple" style="color: white;">Register</a>
-                </li>
-                <li>
-                    <a href="login.jsp" class="btn btn-simple" style="color: white;">Login</a>
+                <li class="dropdown" style="color: white;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">Login/Register
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.jsp" class="btn btn-simple">Login</a></li>
+                        <li><a href="register.jsp" class="btn btn-simple">Register</a></li>
+                    </ul>
                 </li>
                 <%
                     }
