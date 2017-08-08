@@ -49,7 +49,7 @@
 
 <div class="wrapper">
     <div class="register-background">
-        <div class="filter-black"></div>
+        <%--<div class="filter-black"></div>--%>
         <div class="container">
             <div>
                 <h2 style="color: #00bbff"><%=session.getAttribute("username").toString().toUpperCase()%> - My Cars</h2>

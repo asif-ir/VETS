@@ -35,46 +35,48 @@
             <div>
                 <h2 style="color: #00bbff">Used Cars</h2>
                 <hr>
-                <%!
-                    List<Car> cars = new CarModel().getCarList("used");
-                %>
-                <%
-                    for (Car car : cars) {
-                %>
-                <a id="list" href="view_car.jsp?id=<%=car.getId()%>">
-                    <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
-                        <div class="col-md-4 col-sm-3 col-md-2">
-                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%>
-                            </h4>
-                            <h6 style="color: #5BCA99;"><em><%=car.getModel_name()%></em></h6><br>
-                            <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>"
-                                 class="img-thumbnail img-responsive">
+                <div id="easyPaginate">
+                    <%!
+                        List<Car> cars = new CarModel().getCarList("used");
+                    %>
+                    <%
+                        for (Car car : cars) {
+                    %>
+                    <a id="list" href="view_car.jsp?id=<%=car.getId()%>">
+                        <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
+                            <div class="col-md-4 col-sm-3 col-md-2">
+                                <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%>
+                                </h4>
+                                <h6 style="color: #5BCA99;"><em><%=car.getModel_name()%>
+                                </em></h6><br>
+                                <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>"
+                                     class="img-thumbnail img-responsive">
+                            </div>
+                            <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
+                                <br><br>
+                                <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%>
+                                </button>
+                                <br><br>
+                                <p class=""><em><strong>Manufacturing
+                                    Year: </strong></em><%=car.getManufacturing_year()%>
+                                </p>
+                                <br>
+                                <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%>
+                                </p>
+                                <br>
+                                <p class=""><em><strong>Odometer Reading: </strong></em><%=car.getOdo_reading()%>
+                                    kms</p>
+                            </div>
                         </div>
-                        <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
-                            <br><br>
-                            <button href="#fakelink" class="btn btn-fill btn-primary">Rs. <%=car.getPrice()%>
-                            </button>
-                            <br><br>
-                            <p class=""><em><strong>Manufacturing
-                                Year: </strong></em><%=car.getManufacturing_year()%>
-                            </p>
-                            <br>
-                            <p class=""><em><strong>Engine: </strong></em><%=car.getEngine()%>
-                            </p>
-                            <br>
-                            <p class=""><em><strong>Odometer Reading: </strong></em><%=car.getOdo_reading()%>
-                                kms</p>
-                        </div>
-                    </div>
-                </a>
-                <br>
-                <%
-                    }
-                %>
+                        <br>
+                    </a>
+                    <%
+                        }
+                    %>
+                </div>
+
+
             </div>
-        </div>
-        <div class="footer register-footer text-center">
-            <h6>Made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>
@@ -93,5 +95,20 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 
 <script src="assets/js/ct-paper.js"></script>
+<script src="assets/js/paginate.js"></script>
+<script>
+    $('#easyPaginate').easyPaginate({
+        paginateElement: 'a',
+        elementsPerPage: 5,
+        firstButton: false,
+        firstButtonText: '<<',
+        lastButton: false,
+        lastButtonText: '>>',
+        prevButton: true,
+        prevButtonText: 'Prev ',
+        nextButton: true,
+        nextButtonText: 'Next'
+    });
+</script>
 
 </html>

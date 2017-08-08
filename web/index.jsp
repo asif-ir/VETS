@@ -27,12 +27,12 @@
 
 <div class="wrapper">
     <%@ include file="includes/_navbar.jsp" %>
-    <div class="demo-header demo-header-image">
-        <div class="motto">
-            <h1 class="title-uppercase" style="text-shadow: 4px 4px black">Trade & Exchange</h1>
+    <div class="demo-header demo-header-image" >
+        <div class="motto" >
+            <h1 class="title-uppercase" style="text-shadow: 4px 4px black; background-color: rgba(0,0,0,0.3);">Trade & Exchange</h1>
 
             <div style="width: 40%; margin-left: 30%;">
-                <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
+                <ul class="nav nav-pills nav-pills-info nav-justified text-center" role="tablist">
                     <li class="active">
                         <a href="list_used.jsp">
                             List used cars
@@ -72,7 +72,7 @@
                     <div class="item active">
                         <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
                                 src="assets/cars/<%=car.getId()%>.jpg"
-                                class="img-responsive">
+                                class="img-responsive img-rounded">
                         </a></div>
                     </div>
                     <%
@@ -81,7 +81,7 @@
                     <div class="item"><%--assets/cars/{id}+".jpg"--%>
                         <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
                                 src="assets/cars/<%=car.getId()%>.jpg"
-                                class="img-responsive">
+                                class="img-responsive img-rounded">
                         </a></div>
                     </div>
                     <%
@@ -117,16 +117,16 @@
                     <div class="item active">
                         <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
                                 src="assets/cars/<%=car.getId()%>.jpg"
-                                class="img-responsive">
+                                class="img-responsive img-rounded">
                         </a></div>
                     </div>
                     <%
                     } else {
                     %>
-                    <div class="item"><%--assets/cars/{id}+".jpg"--%>
+                    <div class="item">
                         <div class="col-xs-4"><a href=view_car.jsp?id=<%=car.getId()%>><img
                                 src="assets/cars/<%=car.getId()%>.jpg"
-                                class="img-responsive">
+                                class="img-responsive img-rounded">
                         </a></div>
                     </div>
                     <%

@@ -31,8 +31,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
-                    <div class="register-card">
-                        <h3 class="title">Register Car To Sell</h3>
+                    <div class="register-card" style="background-color: rgba(0,0,0,0.3)">
+                        <h3 class="title" style="color: #00bbff;">Register Car To Sell</h3>
 
                         <br>
                         <%@include file="includes/_message.jsp" %>

@@ -40,10 +40,11 @@
                     List<Car> cars = new CarModel().getCarList("new");
 
                 %>
+                <div class="easyPaginate">
                 <%
                     for(Car car:cars){
                 %>
-                <a href="view_car.jsp?id=<%=car.getId()%>">
+                <a id="list" href="view_car.jsp?id=<%=car.getId()%>">
                     <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
                         <div class="col-md-4 col-sm-3 col-md-2">
                             <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4>
@@ -67,6 +68,7 @@
 
                     }
                 %>
+                </div>
 
             </div>
         </div>
@@ -90,5 +92,20 @@
 <script src="assets/js/bootstrap-datepicker.js"></script>
 
 <script src="assets/js/ct-paper.js"></script>
+<script src="assets/js/paginate.js"></script>
+<script>
+    $('#easyPaginate').easyPaginate({
+        paginateElement: 'a',
+        elementsPerPage: 5,
+        firstButton: false,
+        firstButtonText: '<<',
+        lastButton: false,
+        lastButtonText: '>>',
+        prevButton: true,
+        prevButtonText: 'Prev ',
+        nextButton: true,
+        nextButtonText: 'Next'
+    });
+</script>
 
 </html>
