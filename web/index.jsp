@@ -32,7 +32,7 @@
             <h1 class="title-uppercase">Trade & Exchange</h1>
 
             <div style="width: 40%; margin-left: 30%;">
-                <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
+                <ul class="nav nav-pills nav-pills-danger nav-justified text-center">
                     <li class="active">
                         <a href="list_used.jsp">
                             List used cars
