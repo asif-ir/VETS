@@ -161,9 +161,6 @@
                             <input type="number" class="form-control" name="price" id="price" placeholder="Enter Price"
                                    required>
 
-                            <label>Upload Image</label>
-                            <input type="file" name="file" value="Upload Images" accept="image/*">
-
                             <button class="btn btn-danger btn-block">Register</button>
                         </form>
                     </div>
