@@ -34,16 +34,16 @@
             <div style="width: 40%; margin-left: 30%;">
                 <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
                     <li class="active">
-                        <a href="list_used.jsp" role="tab" data-toggle="tab">
+                        <a href="list_used.jsp">
                             List used cars
                         </a>
                     </li>
                     <li class="active">
-                        <a href="list_new.jsp" role="tab" data-toggle="tab">
+                        <a href="list_new.jsp">
                             List new cars
                         </a>
                     <li class="active">
-                        <a href="search.jsp" role="tab" data-toggle="tab">
+                        <a href="search.jsp">
                             Search
                         </a>
                     </li>
