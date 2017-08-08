@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="footer register-footer text-center">
-            <h6>&copy; 2015=7, made with <i class="fa fa-heart heart"></i></h6>
+            <h6>&copy; 2017, made with <i class="fa fa-heart heart"></i></h6>
         </div>
     </div>
 </div>
