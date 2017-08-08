@@ -20,6 +20,9 @@
                 <li>
                     <a href="compare_cars.jsp" class="btn btn-simple">Compare Cars</a>
                 </li>
+                <li>
+                    <a href="search.jsp" class="btn btn-simple">Search</a>
+                </li>
             </ul>
         </div>
 

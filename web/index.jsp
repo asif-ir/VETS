@@ -29,7 +29,7 @@
     <%@ include file="includes/_navbar.jsp" %>
     <div class="demo-header demo-header-image">
         <div class="motto">
-            <h1 class="title-uppercase">Trade & Exchange</h1>
+            <h1 class="title-uppercase" style="text-shadow: 4px 4px black">Trade & Exchange</h1>
 
             <div style="width: 40%; margin-left: 30%;">
                 <ul class="nav nav-pills nav-pills-danger nav-justified text-center" role="tablist">
@@ -55,12 +55,12 @@
 </div>
 <br><br><br>
 <div class="container" style="background-color: rgba(0,0,0,0.3);">
-    <h3 style="color: white;">Recent Used Cars Updated.</h3>
+    <h3 style="color: white;">Recent Used Cars Updated</h3>
     <hr>
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="background-color: rgba(0,0,0,0);">
                     <%
                         List<Car> carList = (new CarModel()).getUsedCarList(10);
 
@@ -89,6 +89,7 @@
                         }
                     %>
                 </div>
+                <br><br>
                 <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
                         class="glyphicon glyphicon-chevron-left"></i></a>
                 <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
@@ -104,7 +105,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarouselNew">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="background-color: rgba(0,0,0,0);">
                     <%
                         List<Car> carListNew = (new CarModel()).getNewCarList(10);
 
@@ -133,6 +134,7 @@
                         }
                     %>
                 </div>
+                <br><br>
                 <a class="left carousel-control" href="#theCarouselNew" data-slide="prev"><i
                         class="glyphicon glyphicon-chevron-left"></i></a>
                 <a class="right carousel-control" href="#theCarouselNew" data-slide="next"><i
@@ -141,6 +143,7 @@
         </div>
     </div>
 </div>
+<br><br>
 </body>
 
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>

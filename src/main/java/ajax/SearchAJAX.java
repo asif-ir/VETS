@@ -24,10 +24,11 @@ public class SearchAJAX extends HttpServlet {
 
         if (searchResults.size() > 0) {
             for (Car car : searchResults) {
-                out.println("<a href=\"view_car.jsp?id=" + car.getId() + ">\n" +
+                out.println("<a id=\"list\" href=\"view_car.jsp?id="+car.getId()+"\">" +
                         "                    <div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.2)\">\n" +
                         "                        <div class=\"col-md-4 col-sm-3 col-md-2\">\n" +
-                        "                            <h4 style=\"color: #5BCAFF;\">" + car.getBrand_name() + "</h4><br>\n" +
+                        "                            <h4 style=\"color: #5BCAFF;\">" + car.getBrand_name() + "</h4>\n" +
+                        "                            <h6 style=\"color: #5BCA99;\"><em>" + car.getModel_name() + "</em></h6>\n" +
                         "                            <img src=\"assets/cars/" + car.getId() + ".jpg\" alt=\"" + car.getBrand_name() + "\" class=\"img-thumbnail img-responsive\">\n" +
                         "                        </div>\n" +
                         "                        <div class=\"col-md-8 col-md-offset-1 text-right\" style=\"color: white\">\n" +

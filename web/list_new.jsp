@@ -46,7 +46,8 @@
                 <a href="view_car.jsp?id=<%=car.getId()%>">
                     <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
                         <div class="col-md-4 col-sm-3 col-md-2">
-                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4><br>
+                            <h4 style="color: #5BCAFF;"><%=car.getBrand_name()%></h4>
+                            <h6 style="color: #5BCA99;"><em><%=car.getModel_name()%></em></h6><br>
                             <img src="assets/cars/<%= car.getId() %>.jpg" alt="<%=car.getBrand_name()%>" class="img-thumbnail img-responsive">
                         </div>
                         <div class="col-md-8 col-md-offset-1 text-right" style="color: white">
