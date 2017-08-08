@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921e2ea5-ad0f-4e71-87a7-b0bd7b054005" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/cars/1.jpg" afterPath="$PROJECT_DIR$/web/assets/cars/13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/cars/2.jpg" afterPath="$PROJECT_DIR$/web/assets/cars/14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/cars/3.jpg" afterPath="$PROJECT_DIR$/web/assets/cars/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/cars/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/cars/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/cars/18.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ajax/SearchAJAX.java" afterPath="$PROJECT_DIR$/src/main/java/ajax/SearchAJAX.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/compare_cars.jsp" afterPath="$PROJECT_DIR$/web/compare_cars.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/includes/_login_register_navbar.jsp" afterPath="$PROJECT_DIR$/web/includes/_login_register_navbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/includes/_navbar.jsp" afterPath="$PROJECT_DIR$/web/includes/_navbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/list_new.jsp" afterPath="$PROJECT_DIR$/web/list_new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/list_used.jsp" afterPath="$PROJECT_DIR$/web/list_used.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.jsp" afterPath="$PROJECT_DIR$/web/search.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/includes/_session_validate.jsp" afterPath="$PROJECT_DIR$/web/includes/_session_validate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile.jsp" afterPath="$PROJECT_DIR$/web/profile.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +22,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_navbar.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_navbar.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/includes/_navbar.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
@@ -62,8 +57,8 @@
       <file leaf-file-name="_login_register_navbar.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/includes/_login_register_navbar.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="40" column="89" lean-forward="false" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -77,6 +72,26 @@
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/profile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_session_validate.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/includes/_session_validate.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,18 +120,19 @@
         <option value="$PROJECT_DIR$/src/main/java/models/CarModel.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/web/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/AddTransactionServlet.java" />
         <option value="$PROJECT_DIR$/web/view_car.jsp" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/web/compare_cars.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
-        <option value="$PROJECT_DIR$/web/includes/_login_register_navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ajax/SearchAJAX.java" />
         <option value="$PROJECT_DIR$/web/list_used.jsp" />
         <option value="$PROJECT_DIR$/web/list_new.jsp" />
         <option value="$PROJECT_DIR$/web/includes/_navbar.jsp" />
+        <option value="$PROJECT_DIR$/web/includes/_login_register_navbar.jsp" />
+        <option value="$PROJECT_DIR$/web/profile.jsp" />
+        <option value="$PROJECT_DIR$/web/includes/_session_validate.jsp" />
       </list>
     </option>
   </component>
@@ -253,6 +269,7 @@
       <recent name="ajax" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rawlooa\Downloads\SpringRestCrud\VETS\web\assets\cars" />
       <recent name="C:\Users\rawlooa\Downloads\SpringRestCrud\VETS\web\assets\paper_img" />
       <recent name="C:\Users\rawlooa\Downloads\SpringRestCrud\VETS\web\assets\js" />
     </key>
@@ -986,16 +1003,15 @@
       <workItem from="1502038726693" duration="3823000" />
       <workItem from="1502044226024" duration="6007000" />
       <workItem from="1502076071694" duration="27984000" />
-      <workItem from="1502143798028" duration="14522000" />
+      <workItem from="1502143798028" duration="15957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52336000" />
+    <option name="totallyTimeSpent" value="53771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1021,7 +1037,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2889785" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28091398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20430107" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24164525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1053,14 +1069,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/PDFUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1317,14 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="91" column="7" lean-forward="false" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/paper_img/landscape.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1417,14 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/includes/_login_register_navbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ajax/SearchAJAX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1457,6 +1449,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/includes/_login_register_navbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="40" column="89" lean-forward="false" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/includes/_session_validate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
           <folding />
         </state>
       </provider>

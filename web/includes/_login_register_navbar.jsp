@@ -38,7 +38,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="profile.jsp" class="btn btn-simple" style="color: black;">View My Cars</a></li>
                         <li><a href="add_car.jsp" class="btn btn-simple" style="color: black;">Add Car</a></li>
-                        <li><a href="logout" class="btn btn-simple" >Logout</a></li>
+                        <li><a href="logout" class="btn btn-simple" style="color: black;">Logout</a></li>
                     </ul>
                 </li>
                 <%

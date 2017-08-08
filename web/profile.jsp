@@ -29,7 +29,10 @@
 </head>
 <body>
 <%
-    String msg = (String) request.getAttribute("message");
+    String msg = "";
+    if (request.getAttribute("message")!=null) {
+        msg = request.getAttribute("message").toString();
+    }
     if (msg.equals("Transaction Failed")) {
 %>
 <script>
