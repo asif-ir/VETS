@@ -41,7 +41,7 @@
 <%
 } else if (msg.equals("Transaction Successful")) {
     response.getWriter().print("<script>\n" +
-            "    alert("+(String) request.getAttribute("order_msg")+");" +
+            "    alert("+ request.getAttribute("order_msg").toString()+");" +
             "</script>");
     }
 %>
