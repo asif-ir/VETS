@@ -21,7 +21,9 @@
                 <li>
                     <a href="compare_cars.jsp" class="btn btn-simple" style="color: white;">Compare Cars</a>
                 </li>
-
+                <li>
+                    <a href="search.jsp" class="btn btn-simple" style="color: white;">Search</a>
+                </li>
             </ul>
         </div>
 
