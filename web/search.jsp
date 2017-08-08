@@ -62,7 +62,11 @@
 
 <script>
     $("#keyword").keyup(function (event) {
-        $("#results").html("");
+        if ($("#keyword").val() != "") {
+            $("#results").html("<br><br><br><div class='text-center'><img src='assets/paper_img/loading.gif' style='width: 15%; height: 15%;'></div>");
+        } else {
+            $("#results").html("");
+        }
         $.post("/search",
             {
                 keyword: $("#keyword").val()

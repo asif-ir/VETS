@@ -62,7 +62,7 @@
                                 %>
                             </select>
                         </div>
-                        <div class="col-md-3 col-md-offset-2">
+                        <div class="col-md-3 col-md-offset-1">
                             <button class="btn btn-info btn-fill btn-block" on id="compare_btn"><i class="fa fa-search"
                                                                                                    aria-hidden="true"></i>
                                 Compare
@@ -96,6 +96,8 @@
 <script src="../assets/js/ct-paper.js"></script>
 <script>
     $("#compare_btn").click(function (event) {
+        $("#results").html("<br><div class='text-center'><img src='assets/paper_img/loading.gif' style='width: 15%; height: 15%;'></div>");
+
         console.log($("#cmp_car_t1 option:selected").text());
         console.log($("#cmp_car_t2 option:selected").text());
 
