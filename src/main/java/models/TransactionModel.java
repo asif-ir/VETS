@@ -66,7 +66,7 @@ public class TransactionModel {
                         .get(String.class)
                 ,
                 listType);
-
+        System.out.println("In model :::::::::::::::::::::::::::::::::::::::::::::::::::::" + transactionList.get(0).getPrice());
         return transactionList;
 
     }

@@ -14,6 +14,7 @@
     <%
         List<Transaction> transactions = new TransactionModel().getTransaction();
         for (Transaction transaction : transactions) {
+            System.out.println("---------------------------" + transaction.getPrice());
             try {
     %>
     <tr>
