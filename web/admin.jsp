@@ -31,7 +31,7 @@
             <ul class="nav nav-tabs" style="font-weight: bolder; color: #00bbff;">
                 <li class="active" style="color: #00bbff;"><a data-toggle="tab" href="#home">Recent Transactions</a></li>
                 <li style="color: #00bbff;"><a data-toggle="tab" href="#menu1">Customers</a></li>
-                <li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>
+                <%--<li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>--%>
             </ul>
 
             <div class="tab-content">
@@ -49,11 +49,11 @@
                         <%@include file="includes/_customers_table.jsp"%>
                     </div>
                 </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h3>Graphs</h3>
-                    <hr>
-                    <p>Graphs content goes here</p>
-                </div>
+                <%--<div id="menu2" class="tab-pane fade">--%>
+                    <%--<h3>Graphs</h3>--%>
+                    <%--<hr>--%>
+                    <%--<p>Graphs content goes here</p>--%>
+                <%--</div>--%>
             </div>
         </div>
     </div>
