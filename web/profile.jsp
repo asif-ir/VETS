@@ -29,7 +29,10 @@
 </head>
 <body>
 <%
-    String msg = (String) request.getAttribute("message");
+    String msg = "";
+    if (request.getAttribute("message")!=null) {
+        msg = request.getAttribute("message").toString();
+    }
     if (msg.equals("Transaction Failed")) {
 %>
 <script>
@@ -38,7 +41,7 @@
 <%
 } else if (msg.equals("Transaction Successful")) {
     response.getWriter().print("<script>\n" +
-            "    alert("+(String) request.getAttribute("order_msg")+");" +
+            "    alert("+ request.getAttribute("order_msg").toString()+");" +
             "</script>");
     }
 %>
@@ -46,7 +49,7 @@
 
 <div class="wrapper">
     <div class="register-background">
-        <div class="filter-black"></div>
+        <%--<div class="filter-black"></div>--%>
         <div class="container">
             <div>
                 <h2 style="color: #00bbff"><%=session.getAttribute("username").toString().toUpperCase()%> - My Cars</h2>

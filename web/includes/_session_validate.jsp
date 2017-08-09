@@ -3,7 +3,7 @@
 */
 <%
     if (session.getAttribute("username") == null) {
-        request.setAttribute("message", "Error in Login");
+        request.setAttribute("message", "You must login first");
         request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 %>

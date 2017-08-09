@@ -177,3 +177,20 @@
 .alert h5 {
   margin-bottom: 10px;
 }
+
+.easyPaginateNav {
+  color: orangered;
+  text-align : center;
+  padding: 1%;
+  margin: 1%;
+  margin-bottom: 5%;
+  border-radius: 1%;
+}
+
+.easyPaginateNav > a {
+  color: white;
+  padding: 1%;
+  margin: 1%;
+  font-weight: 700;
+  background-color: #2e6da4;
+}
