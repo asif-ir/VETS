@@ -31,7 +31,7 @@ public class PDFUtil {
             float[] columnWidths = {1f, 1f, 1f};
             table.setWidths(columnWidths);
 
-            PdfPCell cell1 = new PdfPCell(new Paragraph("Item"));
+            PdfPCell cell1 = new PdfPCell(new Paragraph("User"));
             cell1.setPaddingLeft(10);
             cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
             cell1.setVerticalAlignment(Element.ALIGN_MIDDLE);

@@ -92,7 +92,7 @@ public class AddTransactionServlet extends HttpServlet {
 
         new PDFUtil().create(
                 buyer.getFirst_name() + " " + buyer.getLast_name(),
-                "Trade for " + car_buy.getBrand_name() + " - " + car_buy.getModel_name() + " for " +
+                "Trade " + car_buy.getBrand_name() + " - " + car_buy.getModel_name() + " for " +
                         car_sell.getBrand_name() + " - " + car_sell.getModel_name() +"\n"+order_msg,
                 Math.abs(transaction.getPrice())
         );
