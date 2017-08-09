@@ -56,10 +56,16 @@ public class TransactionModel {
     }
 
     public List<Transaction> getTransaction() {
-        List<Transaction> transactionList = client
-                .target(URL_TRANSACTION + Constants.URL_TRANS_LIST)
-                .request(MediaType.APPLICATION_JSON)
-                .get(List.class);
+        Type listType = new TypeToken<ArrayList<Transaction>>() {
+        }.getType();
+        ArrayList<Transaction> transactionList = new Gson().fromJson(
+                client
+                        .target(URL_TRANSACTION + Constants.URL_TRANS_LIST)
+                        .request(MediaType.TEXT_PLAIN)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
 
         return transactionList;
 

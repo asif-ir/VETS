@@ -41,11 +41,18 @@ public class UserModel {
     }
 
     public List<User> getUsers() {
-        List<User> userList = client
-                .target(URL_USER + Constants.URL_USER_LIST)
-                .request(MediaType.APPLICATION_JSON)
-                .get(List.class);
-        return userList;
+        Type listType = new TypeToken<ArrayList<User>>() {
+        }.getType();
+        ArrayList<User> users = new Gson().fromJson(
+                client
+                        .target(URL + "user/list")
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get(String.class)
+                ,
+                listType);
+
+        return users;
     }
 
     public Status addUser(User user) {
