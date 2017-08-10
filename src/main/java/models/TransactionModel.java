@@ -24,12 +24,6 @@ public class TransactionModel {
     private String URL_TRANSACTION = Constants.URL + Constants.URL_TRANSACTION;
 
     public Status addTransaction(Transaction transaction) {
-        System.out.println("TRansssssssss : "+URL_TRANSACTION+URL_TRANS_CREATE);
-        /*Status status = client
-                .target(URL_TRANSACTION + URL_TRANS_CREATE)
-                .request(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)
-                .post(Entity.json(transaction), Status.class);*/
         Type type = new TypeToken<Status>() {
         }.getType();
         Status status = new Gson().fromJson(
@@ -40,9 +34,6 @@ public class TransactionModel {
                         .post(Entity.json(transaction),String.class)
                 ,
                 type);
-       /* Status status = client.target(URL_TRANSACTION + URL_TRANS_CREATE)
-                .request(MediaType.APPLICATION_JSON)
-                .post(Entity.json(transaction), Status.class);*/
         return status;
     }
 
@@ -66,9 +57,7 @@ public class TransactionModel {
                         .get(String.class)
                 ,
                 listType);
-        System.out.println("In model :::::::::::::::::::::::::::::::::::::::::::::::::::::" + transactionList.get(0).getPrice());
         return transactionList;
-
     }
 
     public Status deleteTransaction(long transaction_id) {
@@ -79,5 +68,4 @@ public class TransactionModel {
 
         return status;
     }
-
 }

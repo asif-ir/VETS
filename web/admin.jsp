@@ -35,7 +35,7 @@
                 <li class="active" style="color: #00bbff;"><a data-toggle="tab" href="#home">Recent Transactions</a>
                 </li>
                 <li style="color: #00bbff;"><a data-toggle="tab" href="#menu1">Customers</a></li>
-                <li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>
+                <%--<li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>--%>
             </ul>
 
             <div class="tab-content">
@@ -168,6 +168,7 @@
         </div>
     </div>
 </div>
+
 </body>
 
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
