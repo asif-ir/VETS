@@ -15,7 +15,7 @@ import java.io.FileOutputStream;
  * Created by rawlooa on 7/20/2017.
  */
 public class PDFUtil {
-    public void create(String name, String model, Double price) {
+    public static void create(String name, String model, Double price) {
         Document document = new Document();
         try
         {
