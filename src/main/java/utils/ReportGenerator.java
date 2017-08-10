@@ -1,26 +1,54 @@
 package utils;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import entities.Transaction;
+import models.TransactionModel;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.*;
 
 /**
  * Created by vijayn on 8/10/2017.
  */
 public class ReportGenerator {
+    public static void setUpData(){
+        java.util.List<Transaction> transactions = new TransactionModel().getTransaction();
+        String arr[][] = new String[5][transactions.size()];
+        int i=0;
+        for(Transaction transaction:transactions){
+            arr[0][i]=Long.toString(transaction.getTransaction_id());
+            arr[1][i]=Long.toString(transaction.getBuyer_id());
+            arr[2][i]=Long.toString(transaction.getSeller_id());
+            arr[3][i]=Double.toString(transaction.getPrice());
+            arr[4][i]=Integer.toString(transaction.getvehicle_id());
+            i++;
+        }
+
+        int j=0;
+        ReportGenerator.create(arr[j++],arr[j++],arr[j++],arr[j++],arr[j]);
+        System.out.println("yalo");
+    }
+
     public static void create(String[] transaction_id, String[] buyer_id,String[] seller_id, String[] price,String[] vehicle_id) {
         Document document = new Document();
         try
         {
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("transactions.pdf"));
             document.open();
+            //Image image1 = Image.getInstance("watermark.png");
+            //document.add(image1);
+
+
+            String imageUrl = "http://jenkov.com/images/" +
+                    "20081123-20081123-3E1W7902-small-portrait.jpg";
+
+            Image image2 = Image.getInstance("C:\\Users\\vijayn\\IdeaProjects\\VETS\\web\\assets\\paper_img\\logo.png");
+            image2.setAlignment(Element.ALIGN_CENTER);
+            document.add(image2);
 
             PdfPTable table = new PdfPTable(5); // 3 columns.
             table.setWidthPercentage(100); //Width 100%
@@ -109,6 +137,9 @@ public class ReportGenerator {
             e.printStackTrace();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }
+        catch (java.io.IOException io){
+            io.printStackTrace();
         }
     }
 
