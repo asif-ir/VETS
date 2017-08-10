@@ -4,6 +4,16 @@
 // SuperPie
 // Pie Charts made easy
 // www.GraphsCharts.com
+function createPieCharts(used_vehicle,new_vehicle) {
+    /* var labels = new Array('Otters', 'Badgers', 'Stoats', 'Bears');
+     var values = new Array(7.3, 4.2, 4.1, 3.6);
+     var colors = new Array('#EAA83A', '#FEC56B', '#51C5D4', '#89DAEF');*/
+    console.log("in CreatePieCharts");
+    var labels = new Array('New','Used');
+    var values = new Array(new_vehicle, used_vehicle);
+    var colors = new Array('#EAA83A', '#51C5D4');
+    drawPie(labels, values, colors, 'cPie1');
+}
 function drawPie(e, t, n, r, i) {
     var s = 12;
     var o = 8;
@@ -73,7 +83,7 @@ function drawLabels(e, t, n, r, s, o, u, a, f) {
     for (i = 0; i < t.length; i++) {
         var p = r + u + o * (i + 1) + o * i * .2;
         var d = p - o;
-        e.fillStyle = "#000000";
+        e.fillStyle = "#fff";
         e.fillText(t[i], c, p);
         e.fillStyle = n[i];
         e.fillRect(h, d, l, l)
