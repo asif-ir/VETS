@@ -35,7 +35,7 @@
                 <li class="active" style="color: #00bbff;"><a data-toggle="tab" href="#home">Recent Transactions</a>
                 </li>
                 <li style="color: #00bbff;"><a data-toggle="tab" href="#menu1">Customers</a></li>
-                <%--<li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>--%>
+                <li style="color: #00bbff;"><a data-toggle="tab" href="#menu2">Graphs</a></li>
             </ul>
 
             <div class="tab-content">
@@ -56,7 +56,8 @@
                 <div id="menu2" class="tab-pane fade">
                     <h3>Graphs</h3>
                     <hr>
-                    <div>
+                    <table>
+                    <tr <%--class="container"--%>>
 
                         <%
                             CarModel carModel = new CarModel();
@@ -71,7 +72,8 @@
                             //System.out.println(new_car_count);
                             //response.getWriter().print("<div onload=\"createPieCharts("+used_car_count+" , "+new_car_count+")\""+"</div>");
                         %>
-                        <div class="text-center">
+
+                        <td width="50%" <%--class="text-center col-md-6"--%>>
                             <canvas id="cPie1" width="340" height="210"></canvas>
 
                             <script type="text/javascript">
@@ -82,7 +84,7 @@
                                     var chart = new CanvasJS.Chart("chartContainer",
                                         {
                                             title: {
-                                                text: "Bar chart"
+                                                text: "Cars by Brands"
                                             },
 
                                             data: [
@@ -156,13 +158,15 @@
                                     chart.render();
                                 }
                             </script>
-                            <script src="assets/js/canvasjs.min.js"></script>
-                            <div class="text-center" id="chartContainer" style="height: 400px; width: 100%;">
-                                <br><br>
+                        </td>
+                        <td width="50%">
+                            <div <%--class="text-center col-md-6"--%> id="chartContainer" style="height: 400px; width: 100%;">
                             </div>
-
-                        </div>
-                    </div>
+                            <script src="assets/js/canvasjs.min.js"></script>
+                            <br><br>
+                        </td>
+                    </tr>
+                    </table>
                 </div>
             </div>
         </div>

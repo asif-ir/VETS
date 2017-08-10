@@ -11,7 +11,7 @@ function createPieCharts(used_vehicle,new_vehicle) {
     console.log("in CreatePieCharts");
     var labels = new Array('New','Used');
     var values = new Array(new_vehicle, used_vehicle);
-    var colors = new Array('#EAA83A', '#51C5D4');
+    var colors = new Array('#c24642', '#51C5D4');
     drawPie(labels, values, colors, 'cPie1');
 }
 function drawPie(e, t, n, r, i) {
