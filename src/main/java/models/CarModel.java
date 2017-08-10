@@ -36,6 +36,16 @@ public class CarModel {
         return car;
     }
 
+    public Status validateCar(Long id, Double price) {
+        Status status = client
+                .target(URL + "car/" + id + "/" + price)
+                .request(MediaType.TEXT_PLAIN)
+                .accept(MediaType.APPLICATION_JSON)
+                .get(Status.class);
+
+        return status;
+    }
+
     public List<Car> searchCarByKeyword(String keyword) {
         Type listType = new TypeToken<ArrayList<Car>>() {
         }.getType();
