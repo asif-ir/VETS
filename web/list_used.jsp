@@ -41,6 +41,7 @@
                     %>
                     <%
                         for (Car car : cars) {
+                            if (car.getIs_validated() == 1) {
                     %>
                     <a id="list" href="view_car.jsp?id=<%=car.getId()%>">
                         <div class="row" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -71,6 +72,7 @@
                         <br>
                     </a>
                     <%
+                            }
                         }
                     %>
                 </div>

@@ -24,26 +24,28 @@ public class SearchAJAX extends HttpServlet {
 
         if (searchResults.size() > 0) {
             for (Car car : searchResults) {
-                out.println("<a id=\"list\" href=\"view_car.jsp?id="+car.getId()+"\">" +
-                        "                    <div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.2)\">\n" +
-                        "                        <div class=\"col-md-4 col-sm-3 col-md-2\">\n" +
-                        "                            <h4 style=\"color: #5BCAFF;\">" + car.getBrand_name() + "</h4>\n" +
-                        "                            <h6 style=\"color: #5BCA99;\"><em>" + car.getModel_name() + "</em></h6>\n" +
-                        "                            <img src=\"assets/cars/" + car.getId() + ".jpg\" alt=\"" + car.getBrand_name() + "\" class=\"img-thumbnail img-responsive\">\n" +
-                        "                        </div>\n" +
-                        "                        <div class=\"col-md-8 col-md-offset-1 text-right\" style=\"color: white\">\n" +
-                        "                            <br><br>\n" +
-                        "                            <button href=\"#fakelink\" class=\"btn btn-fill btn-primary\">Rs. "+ + car.getPrice() + "</button>\n" +
-                        "                            <br><br>\n" +
-                        "                            <p class=\"\"><em><strong>Manufacturing Year: </strong></em>" + car.getManufacturing_year() + "</p>\n" +
-                        "                            <br>\n" +
-                        "                            <p class=\"\"><em><strong>Engine: </strong></em>" + car.getEngine() + "</p>\n" +
-                        "                            <br>\n" +
-                        "                            <p class=\"\"><em><strong>Odometer Reading: </strong></em>" + car.getOdo_reading() + " kms</p>\n" +
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </a>\n" +
-                        "                <br>");
+                if (car.getIs_validated() == 1) {
+                    out.println("<a id=\"list\" href=\"view_car.jsp?id=" + car.getId() + "\">" +
+                            "                    <div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.2)\">\n" +
+                            "                        <div class=\"col-md-4 col-sm-3 col-md-2\">\n" +
+                            "                            <h4 style=\"color: #5BCAFF;\">" + car.getBrand_name() + "</h4>\n" +
+                            "                            <h6 style=\"color: #5BCA99;\"><em>" + car.getModel_name() + "</em></h6>\n" +
+                            "                            <img src=\"assets/cars/" + car.getId() + ".jpg\" alt=\"" + car.getBrand_name() + "\" class=\"img-thumbnail img-responsive\">\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"col-md-8 col-md-offset-1 text-right\" style=\"color: white\">\n" +
+                            "                            <br><br>\n" +
+                            "                            <button href=\"#fakelink\" class=\"btn btn-fill btn-primary\">Rs. " + +car.getPrice() + "</button>\n" +
+                            "                            <br><br>\n" +
+                            "                            <p class=\"\"><em><strong>Manufacturing Year: </strong></em>" + car.getManufacturing_year() + "</p>\n" +
+                            "                            <br>\n" +
+                            "                            <p class=\"\"><em><strong>Engine: </strong></em>" + car.getEngine() + "</p>\n" +
+                            "                            <br>\n" +
+                            "                            <p class=\"\"><em><strong>Odometer Reading: </strong></em>" + car.getOdo_reading() + " kms</p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n" +
+                            "                </a>\n" +
+                            "                <br>");
+                }
             }
         } else {
             out.print("<p style='color: white'>No Results</p>");

@@ -19,7 +19,7 @@
     <tr>
         <td><%= new UserModel().getUser(transaction.getBuyer_id()).getFirst_name() + " " + new UserModel().getUser(transaction.getBuyer_id()).getLast_name() %>
         </td>
-        <td><%= new UserModel().getUser(transaction.getSeller_id()).getFirst_name() + new UserModel().getUser(transaction.getSeller_id()).getLast_name() %>
+        <td><%= new UserModel().getUser(transaction.getSeller_id()).getFirst_name() + " " + new UserModel().getUser(transaction.getSeller_id()).getLast_name() %>
         </td>
         <td><%= transaction.getPrice() %>
         </td>

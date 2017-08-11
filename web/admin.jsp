@@ -62,16 +62,14 @@
 
                             <%
                                 CarModel carModel = new CarModel();
-                                List<Car> cars = carModel.getCarList();
-                                int total_cars = cars.size();
+                                List<Car> cars_ = carModel.getCarList();
+                                int total_cars = cars_.size();
                                 int used_car_count = 0;
-                                for (Car car : cars) {
+                                for (Car car : cars_) {
                                     if (car.getOdo_reading() != 0)
                                         used_car_count++;
                                 }
                                 int new_car_count = total_cars - used_car_count;
-                                //System.out.println(new_car_count);
-                                //response.getWriter().print("<div onload=\"createPieCharts("+used_car_count+" , "+new_car_count+")\""+"</div>");
                             %>
 
                             <td width="50%" <%--class="text-center col-md-6"--%>>
@@ -218,7 +216,7 @@
             "/car-approval",
             {
                 id: <%=car.getId()%>,
-                price: <%=car.getPrice()%>
+                price: $("#updated_price-<%=car.getId()%>").val()
             },
             function (data) {
                 $("#row-<%=car.getId()%>").remove();

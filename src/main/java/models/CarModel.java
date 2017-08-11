@@ -37,6 +37,7 @@ public class CarModel {
     }
 
     public Status validateCar(Long id, Double price) {
+        System.out.println("ID : " + id + " Price : " + price);
         Status status = client
                 .target(URL + "car/" + id + "/" + price)
                 .request(MediaType.TEXT_PLAIN)
