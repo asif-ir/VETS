@@ -1,13 +1,16 @@
 <%@ page import="models.*" %>
 <%@ page import="entities.Car" %>
 <%@ page import="java.util.HashMap" %>
+
+<%@ include file="includes/_session_validate.jsp" %>
+
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/paper_img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <script src="assets/js/pie.1.3.js"></script>
-    <title>Buy | Trade & Exchange</title>
+    <title>Admin | Trade & Exchange</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
