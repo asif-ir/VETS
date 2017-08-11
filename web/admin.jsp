@@ -44,7 +44,9 @@
 
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                    <h3>Recent Transactions</h3>
+                    <h3>Recent Transactions
+                    <span class="pull-right"><button class="btn btn-info" name="gen-rep" id="gen-rep">Generate Report</button></span>
+                    </h3>
                     <hr>
                     <div>
                         <%@include file="includes/_transactions_table.jsp" %>
@@ -232,6 +234,18 @@
             }
         }
     %>
+    $("#gen-rep").click(function (event) {
+        $.post(
+            "/gen-report",
+            {
+                
+            },
+            function (data) {
+                $("#gen-rep").prop("disabled", true);
+            }
+        );
+        
+    });
 </script>
 
 </html>
